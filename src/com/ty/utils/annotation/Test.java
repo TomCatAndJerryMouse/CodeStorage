@@ -2,6 +2,11 @@ package com.ty.utils.annotation;
 
 import java.lang.reflect.Method;
 
+/**
+ * Èë¿Ú
+ * @author Administrator
+ *
+ */
 public class Test
 {
     public static void main(String[] args)

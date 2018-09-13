@@ -1,22 +1,20 @@
 package com.ty.utils.stream;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Array;
-import java.util.Arrays;
 
 /**
  * 文件读取
- * 
  * @author Administrator
  */
 public class FileRead
 {
+    /**
+     * 入口
+     * @param args
+     */
     public static void main(String[] args)
     {
         try
