@@ -1,6 +1,6 @@
 import React ,{ Component } from 'react';
 import Menu from "./Menu";
-import List from "./List";
+import UserList from "./UserList";
 
 // 定义组件
 class Content extends Component{
@@ -12,7 +12,7 @@ class Content extends Component{
             // 在组件上添加属性值用{}表达是动态表示，组件内可以this.props.属性名取到
             <div style={{width:'100%'}} > 
                 <div style={{float:"left"}}><Menu menuList={menuNames} /></div>
-                <div style={{float:"left",marginLeft: "100px"}}><List /></div>
+                <div style={{float:"left",marginLeft: "100px"}}><UserList /></div>
             </div>
         );
     }
