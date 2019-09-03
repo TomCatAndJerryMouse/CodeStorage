@@ -1,9 +1,7 @@
 import React ,{ Component } from 'react';
 import '../myTable.css'
-import '../mock/mock'
-//挂载 Mock
 
-class List extends Component{
+class CarList extends Component{
 
     // 生命周期函数 组件构造函数 
     constructor(props){
@@ -11,7 +9,6 @@ class List extends Component{
         super(props);
         // 需要将orops里参数绑定到state里才能通过修改state里的数据才能达到数据实时更新到dom
         this.state = {
-            isLoading:true,
             datas:props.datas
         }
     }
@@ -20,24 +17,25 @@ class List extends Component{
     componentWillMount ()
     {
         console.log("List Component componentWillMount");
-        // 发送ajx请求获取数据 ，毁掉使用箭头函数，函数内才能使用this
-        fetch('http://localhost:3000/userlist').then(res=>{
-            return res.json()
-        }).then(json=>{
-            console.log(json.list);
-            this.setState ({
-                isLoading:false,
-                datas:json.list
-            })
+        // 发送ajx请求获取数据
+        let datas = [
+            {name:'张三1111',age:12,addr:'成都'},
+            {name:'李四',age:11,addr:'宜宾'},
+            {name:'网二',age:122,addr:'字样'},
+            {name:'滕毅',age:122,addr:'意大利'},
+            {name:'笑死',age:132,addr:'巴塞罗那'},
+            {name:'罗苗',age:142,addr:'泸州'},
+            {name:'滕旋',age:2,addr:'梁山'}
+        ];
+        this.setState ({
+            datas:datas
         })
-        
     }
 
     // 生命周期函数 渲染组件调用
     render() {
         console.log("List Component render");
         return (
-            this.state.isLoading ? <div>IS loading .....</div> :
             <div style={{float:"left",marginLeft: "100px"}}>
                 <div style={{width:'100%'}}>
                     <div className='myTr myTheader'><div>名字</div><div>年龄</div><div>地址</div><div>操作</div></div>
@@ -97,4 +95,4 @@ class List extends Component{
     }
 
 }
-export default List;
+export default CarList;

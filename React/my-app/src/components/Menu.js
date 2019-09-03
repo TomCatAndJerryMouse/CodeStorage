@@ -1,4 +1,5 @@
 import React ,{ Component } from 'react';
+import { NavLink ,Router} from "react-router-dom";
 
 class Menu extends Component{
 
@@ -6,7 +7,8 @@ class Menu extends Component{
     render() {
         return (
             <ul >
-                {this.props.menuList.map((name,key)=> <li key={key}>{name}</li>)}
+                {this.props.menuList.map((name,key)=>
+                     <NavLink activeStyle ={{fontSize:'25px'}} to={"/" + name}><li key={key}>{name}</li></NavLink>)}
             </ul>
         );
     }
