@@ -1,19 +1,21 @@
-import React ,{ Component }from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
-import Header from './components/Header';
-import Content from './components/Content';
-import Fooder from './components/Fooder'
-
+import HeaderComponent from './components/HeaderComponent';
+import NewContant from './components/NewContant';
+import FooterComponent from './components/FooterComponent'
+import { Layout } from 'antd';
+import "antd/dist/antd.css";
+import ModalComponent from './components/ModalComponent'
 
 class App extends Component {
-  render(){
+  render() {
     return (
-      <div>
-        <div><Header/></div>
-        <div><Content/></div>
-        <div><Fooder/></div>
-      </div>
+      <Layout>
+        <HeaderComponent />
+        <NewContant store={this.props.store}/>
+        <FooterComponent />
+        <ModalComponent store={this.props.store}/>
+      </Layout>
     );
   }
 }
