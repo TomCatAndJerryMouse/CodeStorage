@@ -1,4 +1,5 @@
 
+import css from '../css/index.css';
 // 数据源
 let state = {
     count: 0

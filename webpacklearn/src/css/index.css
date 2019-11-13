@@ -1,0 +1,49 @@
+/* img {
+    vertical-align:middle;
+}
+img .img1 {
+src:url("")
+}
+img .img2 {
+    
+}
+img .img3 {
+    
+} */
+.main {
+    background: red;
+    width: 1280px;
+    height: 720px;
+    color: bisque;
+    font-size: 20px;
+}
+.head {
+    background: black;
+}
+.start{
+    width: 190px;
+}
+.head div{
+  display: inline-block; 
+}
+.borderRight {
+    border-right:1px solid bisque;
+    padding: 0px 10px;
+}
+.row {
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+.menu {
+    margin-left: 21%;
+}
+.menu span {
+    font-size: 12px;
+}
+.userInfo {
+    position: relative;
+    top: 13px;
+}
+.userInfo span {
+    font-size: 12px;
+}
