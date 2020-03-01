@@ -10,6 +10,7 @@ import java.security.spec.InvalidKeySpecException;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
+
 /**
  * 加密参考https://www.cnblogs.com/interdrp/p/4935819.html
  * @author Administrator
@@ -38,8 +39,8 @@ public class HashTool {
 	private String soures;
 	// hash方式 默认md5
 	private String hashType = MD5;
-	// 是否添加盐值默认false不添加
-	private boolean hasSalt = false;
+	// 当前盐值
+	private String salt = "";
 	
 	/**
 	 * 构造函数
@@ -52,17 +53,35 @@ public class HashTool {
 	/**
 	 * @param soures 需要转换的内容
 	 * @param hashType hash方式
-	 * @param hasSalt 是否添加盐值
 	 */
-	public HashTool(String soures,String hashType,boolean hasSalt) {
+	public HashTool(String soures,String hashType) {
 		this.soures = soures;
-		if (null != hashType && !hashType.isEmpty())
-		{
-			this.hashType = hashType;
-		}
-		this.hasSalt = hasSalt;
+		this.hashType = hashType;
 	}
 	
+	/**
+	 * @param soures 需要转换的内容
+	 * @param hashType hash方式
+	 * @param salt 随机盐
+	 */
+	public HashTool(String soures,String hashType,String salt) {
+		this.soures = soures;
+		this.hashType = hashType;
+		this.salt = salt;
+	}
+	
+	public String getHashType() {
+		return hashType;
+	}
+
+	public void setHashType(String hashType) {
+		this.hashType = hashType;
+	}
+
+	public void setSalt(String salt) {
+		this.salt = salt;
+	}
+
 	public String getSoures() {
 		return soures;
 	}
@@ -78,9 +97,10 @@ public class HashTool {
 		byte [] digstBytes = null;
 		try {
 			MessageDigest md = MessageDigest.getInstance(hashType);
-			if (hasSalt)
+			// 如果有盐
+			if (!salt.isEmpty())
 			{
-				md.update(getSalt().getBytes());
+				md.update(salt.getBytes());
 			}
 			// 转换hash byte数组
 			digstBytes = md.digest(soures.getBytes());
@@ -126,7 +146,7 @@ public class HashTool {
 	 * @param array
 	 * @return
 	 */
-	private static String toHex(byte[] array)
+	private String toHex(byte[] array)
 	{
 	    BigInteger bi = new BigInteger(1, array);
 	    String hex = bi.toString(16);
@@ -150,16 +170,20 @@ public class HashTool {
 	 * @throws NoSuchAlgorithmException 
 	 */
 	public static String getSalt(){
-		byte[] slat = new byte[16];
-
+		StringBuilder sb = new StringBuilder(16);
 		try {
 			// 获取SecureRandom SHA1PRNG为随机算法，SUN为调
 			SecureRandom sr = SecureRandom.getInstance("SHA1PRNG","SUN");
-			// 获取随机盐
-			sr.nextBytes(slat);
+			sb.append(sr.nextInt(99999999)).append(sr.nextInt(99999999)); 
+			int len = sb.length(); 
+			if (len < 16) {
+				for (int i = 0; i < 16 - len; i++) { 
+					sb.append("0"); 
+				} 
+			}
 		} catch (NoSuchAlgorithmException | NoSuchProviderException e) {
 			e.printStackTrace();
 		}
-		return slat.toString();
+		return sb.toString();
 	}
 }
