@@ -1,0 +1,827 @@
+[2020-12-13 14:44:50:913] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+[2020-12-13 14:44:50:946] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:242) - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@51b59c1a] has been configured.  Building authorization cache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 14:44:50:947] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:205) - cacheManager property not set.  Constructing CacheManager instance... 
+[2020-12-13 14:44:50:977] [DEBUG] - org.apache.shiro.io.ResourceUtils.loadFromClassPath(ResourceUtils.java:159) - Opening resource from class path [ehcache.xml]
+[2020-12-13 14:44:51:008] [DEBUG] - net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:150) - Configuring ehcache from InputStream
+[2020-12-13 14:44:51:040] [DEBUG] - net.sf.ehcache.config.DiskStoreConfiguration.translatePath(DiskStoreConfiguration.java:141) - Disk Store Path: E:\BigHead\AboutWork\ehcache
+[2020-12-13 14:44:51:089] [DEBUG] - net.sf.ehcache.util.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
+[2020-12-13 14:44:51:128] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:185) - No CacheManagerEventListenerFactory class specified. Skipping...
+[2020-12-13 14:44:51:170] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:44:51:171] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:44:51:177] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:44:51:194] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:44:51:195] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:44:51:195] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:44:51:196] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:44:51:196] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:44:51:196] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:44:51:237] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for shiro.authorizationCache
+[2020-12-13 14:44:51:260] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: shiro.authorizationCache
+[2020-12-13 14:44:51:260] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 14:44:51:261] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 14:44:51:263] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.MemoryStore for activeSessionCache
+[2020-12-13 14:44:51:278] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:169) - Using diskstore path E:\BigHead\AboutWork\ehcache
+[2020-12-13 14:44:51:279] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:170) - Holding exclusive lock on E:\BigHead\AboutWork\ehcache\.ehcache-diskstore.lock
+[2020-12-13 14:44:51:295] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.<init>(DiskStorageFactory.java:168) - Matching data file missing (or empty) for index file. Deleting index file E:\BigHead\AboutWork\ehcache\active%0053ession%0043ache.index
+[2020-12-13 14:44:51:296] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.deleteFile(DiskStorageFactory.java:860) - Failed to delete file active%0053ession%0043ache.index
+[2020-12-13 14:44:51:305] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: activeSessionCache
+[2020-12-13 14:44:51:306] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'activeSessionCache'.
+[2020-12-13 14:44:51:306] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'activeSessionCache'.
+[2020-12-13 14:44:51:308] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:218) - implicit cacheManager created successfully.
+[2020-12-13 14:44:51:309] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:158) - Cache with name 'cn.itrus.framework.shiro.UserReaml.authorizationCache' does not yet exist.  Creating now.
+[2020-12-13 14:44:51:310] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 14:44:51:310] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 14:44:51:311] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'cn.itrus.framework.shiro.UserReaml.authorizationCache'.
+[2020-12-13 14:44:51:311] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:165) - Added EhCache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 14:44:52:716] [INFO] - cn.itrus.framework.filter.ValidataFilter.init(ValidataFilter.java:51) - info ValidataFilter is loaded.
+[2020-12-13 14:44:52:729] [DEBUG] - org.apache.shiro.spring.web.ShiroFilterFactoryBean.createInstance(ShiroFilterFactoryBean.java:424) - Creating Shiro Filter instance.
+[2020-12-13 14:44:52:769] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/static/**] from String definition [anon]
+[2020-12-13 14:44:52:769] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/static/**] to filter [anon] with config [null]
+[2020-12-13 14:44:52:771] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/manager/**] from String definition [authc]
+[2020-12-13 14:44:52:772] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/manager/**] to filter [authc] with config [null]
+[2020-12-13 14:44:52:772] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/login/**] from String definition [anon]
+[2020-12-13 14:44:52:772] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/login/**] to filter [anon] with config [null]
+[2020-12-13 14:44:52:772] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/modify/**] from String definition [authc]
+[2020-12-13 14:44:52:773] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/modify/**] to filter [authc] with config [null]
+[2020-12-13 14:44:52:773] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/validate/**] from String definition [anon]
+[2020-12-13 14:44:52:773] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/validate/**] to filter [anon] with config [null]
+[2020-12-13 14:44:52:773] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/verify/**] from String definition [anon]
+[2020-12-13 14:44:52:774] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/verify/**] to filter [anon] with config [null]
+[2020-12-13 14:45:56:252] [INFO] - cn.itrus.framework.controller.UserController.login(UserController.java:102) - info ø™ ºµ«¬º
+[2020-12-13 14:45:56:253] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:30) - begin query user by username + admin +from db. 
+[2020-12-13 14:45:57:027] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:33) - begin query user by username end.
+[2020-12-13 14:45:57:040] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:572) - Looked up AuthenticationInfo [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=ZjY2YTgyZTU5OWYxZDJmMjEzMDhiMWM0OWMxYjQ5NjQ1ZDliOTc2MzY3ZjVmZGFlMzk0YzA2OTA0MTVhZjI2MA==, salt=3602455880736706]] from doGetAuthenticationInfo
+[2020-12-13 14:45:57:041] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.cacheAuthenticationInfoIfPossible(AuthenticatingRealm.java:510) - AuthenticationInfo caching is disabled for info [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=ZjY2YTgyZTU5OWYxZDJmMjEzMDhiMWM0OWMxYjQ5NjQ1ZDliOTc2MzY3ZjVmZGFlMzk0YzA2OTA0MTVhZjI2MA==, salt=3602455880736706]].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].
+[2020-12-13 14:45:57:041] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:96) - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+[2020-12-13 14:45:57:042] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:102) - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+[2020-12-13 14:45:57:043] [DEBUG] - org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:233) - Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].  Returned account [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=ZjY2YTgyZTU5OWYxZDJmMjEzMDhiMWM0OWMxYjQ5NjQ1ZDliOTc2MzY3ZjVmZGFlMzk0YzA2OTA0MTVhZjI2MA==, salt=3602455880736706]]
+[2020-12-13 14:45:57:057] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 06:45:57 GMT]
+[2020-12-13 14:45:57:058] [DEBUG] - org.apache.shiro.mgt.AbstractRememberMeManager.onSuccessfulLogin(AbstractRememberMeManager.java:290) - AuthenticationToken did not indicate RememberMe is requested.  RememberMe functionality will not be executed for corresponding account.
+[2020-12-13 14:47:31:067] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+[2020-12-13 14:47:31:086] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:242) - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@15d21b21] has been configured.  Building authorization cache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 14:47:31:087] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:205) - cacheManager property not set.  Constructing CacheManager instance... 
+[2020-12-13 14:47:31:128] [DEBUG] - org.apache.shiro.io.ResourceUtils.loadFromClassPath(ResourceUtils.java:159) - Opening resource from class path [ehcache.xml]
+[2020-12-13 14:47:31:159] [DEBUG] - net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:150) - Configuring ehcache from InputStream
+[2020-12-13 14:47:31:197] [DEBUG] - net.sf.ehcache.config.DiskStoreConfiguration.translatePath(DiskStoreConfiguration.java:141) - Disk Store Path: E:\BigHead\AboutWork\ehcache
+[2020-12-13 14:47:31:249] [DEBUG] - net.sf.ehcache.util.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
+[2020-12-13 14:47:31:297] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:185) - No CacheManagerEventListenerFactory class specified. Skipping...
+[2020-12-13 14:47:31:344] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:47:31:345] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:47:31:350] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:47:31:370] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:47:31:371] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:47:31:371] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:47:31:372] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:47:31:374] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:47:31:374] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:47:31:419] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.MemoryStore for activeSessionCache
+[2020-12-13 14:47:31:436] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:169) - Using diskstore path E:\BigHead\AboutWork\ehcache
+[2020-12-13 14:47:31:437] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:170) - Holding exclusive lock on E:\BigHead\AboutWork\ehcache\.ehcache-diskstore.lock
+[2020-12-13 14:47:31:455] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.<init>(DiskStorageFactory.java:168) - Matching data file missing (or empty) for index file. Deleting index file E:\BigHead\AboutWork\ehcache\active%0053ession%0043ache.index
+[2020-12-13 14:47:31:456] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.deleteFile(DiskStorageFactory.java:860) - Failed to delete file active%0053ession%0043ache.index
+[2020-12-13 14:47:31:479] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: activeSessionCache
+[2020-12-13 14:47:31:480] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'activeSessionCache'.
+[2020-12-13 14:47:31:481] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'activeSessionCache'.
+[2020-12-13 14:47:31:486] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for shiro.authorizationCache
+[2020-12-13 14:47:31:498] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: shiro.authorizationCache
+[2020-12-13 14:47:31:499] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 14:47:31:500] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 14:47:31:502] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:218) - implicit cacheManager created successfully.
+[2020-12-13 14:47:31:503] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:158) - Cache with name 'cn.itrus.framework.shiro.UserReaml.authorizationCache' does not yet exist.  Creating now.
+[2020-12-13 14:47:31:504] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 14:47:31:505] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 14:47:31:506] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'cn.itrus.framework.shiro.UserReaml.authorizationCache'.
+[2020-12-13 14:47:31:507] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:165) - Added EhCache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 14:47:33:078] [INFO] - cn.itrus.framework.filter.ValidataFilter.init(ValidataFilter.java:51) - info ValidataFilter is loaded.
+[2020-12-13 14:47:33:092] [DEBUG] - org.apache.shiro.spring.web.ShiroFilterFactoryBean.createInstance(ShiroFilterFactoryBean.java:424) - Creating Shiro Filter instance.
+[2020-12-13 14:47:33:142] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/static/**] from String definition [anon]
+[2020-12-13 14:47:33:142] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/static/**] to filter [anon] with config [null]
+[2020-12-13 14:47:33:144] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/manager/**] from String definition [authc]
+[2020-12-13 14:47:33:145] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/manager/**] to filter [authc] with config [null]
+[2020-12-13 14:47:33:145] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/login/**] from String definition [anon]
+[2020-12-13 14:47:33:146] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/login/**] to filter [anon] with config [null]
+[2020-12-13 14:47:33:146] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/modify/**] from String definition [authc]
+[2020-12-13 14:47:33:147] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/modify/**] to filter [authc] with config [null]
+[2020-12-13 14:47:33:148] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/validate/**] from String definition [anon]
+[2020-12-13 14:47:33:148] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/validate/**] to filter [anon] with config [null]
+[2020-12-13 14:47:33:149] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/verify/**] from String definition [anon]
+[2020-12-13 14:47:33:149] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/verify/**] to filter [anon] with config [null]
+[2020-12-13 14:48:12:894] [INFO] - cn.itrus.framework.controller.UserController.login(UserController.java:102) - info ø™ ºµ«¬º
+[2020-12-13 14:48:12:895] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:30) - begin query user by username + admin +from db. 
+[2020-12-13 14:48:13:703] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:33) - begin query user by username end.
+[2020-12-13 14:48:13:714] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:572) - Looked up AuthenticationInfo [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=YzFkYzE0MTZmNGQ1YzVmMzg2MDIxYWU1ZjVlMDFmZjA3NzVlOWU1YTFlNjZjYTU2NGExZDk5MTViNTM2NDdjYg==, salt=3602455880736706]] from doGetAuthenticationInfo
+[2020-12-13 14:48:13:715] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.cacheAuthenticationInfoIfPossible(AuthenticatingRealm.java:510) - AuthenticationInfo caching is disabled for info [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=YzFkYzE0MTZmNGQ1YzVmMzg2MDIxYWU1ZjVlMDFmZjA3NzVlOWU1YTFlNjZjYTU2NGExZDk5MTViNTM2NDdjYg==, salt=3602455880736706]].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].
+[2020-12-13 14:48:13:716] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:96) - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+[2020-12-13 14:48:13:717] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:102) - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+[2020-12-13 14:48:13:718] [DEBUG] - org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:233) - Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].  Returned account [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=YzFkYzE0MTZmNGQ1YzVmMzg2MDIxYWU1ZjVlMDFmZjA3NzVlOWU1YTFlNjZjYTU2NGExZDk5MTViNTM2NDdjYg==, salt=3602455880736706]]
+[2020-12-13 14:48:13:732] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 06:48:13 GMT]
+[2020-12-13 14:48:13:734] [DEBUG] - org.apache.shiro.mgt.AbstractRememberMeManager.onSuccessfulLogin(AbstractRememberMeManager.java:290) - AuthenticationToken did not indicate RememberMe is requested.  RememberMe functionality will not be executed for corresponding account.
+[2020-12-13 14:50:03:635] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 06:50:03 GMT]
+[2020-12-13 14:50:03:635] [DEBUG] - org.apache.shiro.mgt.DefaultSecurityManager.logout(DefaultSecurityManager.java:559) - Logging out subject with primary principal User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=YzFkYzE0MTZmNGQ1YzVmMzg2MDIxYWU1ZjVlMDFmZjA3NzVlOWU1YTFlNjZjYTU2NGExZDk5MTViNTM2NDdjYg==, salt=3602455880736706]
+[2020-12-13 14:50:09:515] [INFO] - cn.itrus.framework.controller.UserController.login(UserController.java:102) - info ø™ ºµ«¬º
+[2020-12-13 14:50:09:516] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:30) - begin query user by username + admin +from db. 
+[2020-12-13 14:50:09:871] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:33) - begin query user by username end.
+[2020-12-13 14:50:09:872] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:572) - Looked up AuthenticationInfo [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=MjFlOTMzNzg4OTNhNGU5MTFjYWVhMDZkMjQyZGFkMzdjMmI3OTFhNzFhNGRlYTY1NjllNjZkN2U3YzYyMTExYQ==, salt=3602455880736706]] from doGetAuthenticationInfo
+[2020-12-13 14:50:09:872] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.cacheAuthenticationInfoIfPossible(AuthenticatingRealm.java:510) - AuthenticationInfo caching is disabled for info [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=MjFlOTMzNzg4OTNhNGU5MTFjYWVhMDZkMjQyZGFkMzdjMmI3OTFhNzFhNGRlYTY1NjllNjZkN2U3YzYyMTExYQ==, salt=3602455880736706]].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].
+[2020-12-13 14:50:09:873] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:96) - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+[2020-12-13 14:50:09:873] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:102) - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+[2020-12-13 14:50:09:873] [DEBUG] - org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:233) - Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].  Returned account [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=MjFlOTMzNzg4OTNhNGU5MTFjYWVhMDZkMjQyZGFkMzdjMmI3OTFhNzFhNGRlYTY1NjllNjZkN2U3YzYyMTExYQ==, salt=3602455880736706]]
+[2020-12-13 14:50:09:874] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 06:50:09 GMT]
+[2020-12-13 14:50:09:875] [DEBUG] - org.apache.shiro.mgt.AbstractRememberMeManager.onSuccessfulLogin(AbstractRememberMeManager.java:290) - AuthenticationToken did not indicate RememberMe is requested.  RememberMe functionality will not be executed for corresponding account.
+[2020-12-13 14:53:30:448] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+[2020-12-13 14:53:30:464] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:242) - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@15d21b21] has been configured.  Building authorization cache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 14:53:30:464] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:205) - cacheManager property not set.  Constructing CacheManager instance... 
+[2020-12-13 14:53:30:487] [DEBUG] - org.apache.shiro.io.ResourceUtils.loadFromClassPath(ResourceUtils.java:159) - Opening resource from class path [ehcache.xml]
+[2020-12-13 14:53:30:509] [DEBUG] - net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:150) - Configuring ehcache from InputStream
+[2020-12-13 14:53:30:538] [DEBUG] - net.sf.ehcache.config.DiskStoreConfiguration.translatePath(DiskStoreConfiguration.java:141) - Disk Store Path: E:\BigHead\AboutWork\ehcache
+[2020-12-13 14:53:30:579] [DEBUG] - net.sf.ehcache.util.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
+[2020-12-13 14:53:30:619] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:185) - No CacheManagerEventListenerFactory class specified. Skipping...
+[2020-12-13 14:53:30:654] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:53:30:655] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:53:30:660] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:53:30:677] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:53:30:678] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:53:30:678] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:53:30:679] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:53:30:679] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:53:30:679] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:53:30:716] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for shiro.authorizationCache
+[2020-12-13 14:53:30:733] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: shiro.authorizationCache
+[2020-12-13 14:53:30:734] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 14:53:30:734] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 14:53:30:737] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.MemoryStore for activeSessionCache
+[2020-12-13 14:53:30:748] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:169) - Using diskstore path E:\BigHead\AboutWork\ehcache
+[2020-12-13 14:53:30:748] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:170) - Holding exclusive lock on E:\BigHead\AboutWork\ehcache\.ehcache-diskstore.lock
+[2020-12-13 14:53:30:761] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.<init>(DiskStorageFactory.java:168) - Matching data file missing (or empty) for index file. Deleting index file E:\BigHead\AboutWork\ehcache\active%0053ession%0043ache.index
+[2020-12-13 14:53:30:762] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.deleteFile(DiskStorageFactory.java:860) - Failed to delete file active%0053ession%0043ache.index
+[2020-12-13 14:53:30:769] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: activeSessionCache
+[2020-12-13 14:53:30:770] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'activeSessionCache'.
+[2020-12-13 14:53:30:770] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'activeSessionCache'.
+[2020-12-13 14:53:30:772] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:218) - implicit cacheManager created successfully.
+[2020-12-13 14:53:30:772] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:158) - Cache with name 'cn.itrus.framework.shiro.UserReaml.authorizationCache' does not yet exist.  Creating now.
+[2020-12-13 14:53:30:772] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 14:53:30:773] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 14:53:30:773] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'cn.itrus.framework.shiro.UserReaml.authorizationCache'.
+[2020-12-13 14:53:30:773] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:165) - Added EhCache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 14:53:31:989] [INFO] - cn.itrus.framework.filter.ValidataFilter.init(ValidataFilter.java:51) - info ValidataFilter is loaded.
+[2020-12-13 14:53:32:002] [DEBUG] - org.apache.shiro.spring.web.ShiroFilterFactoryBean.createInstance(ShiroFilterFactoryBean.java:424) - Creating Shiro Filter instance.
+[2020-12-13 14:53:32:047] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/static/**] from String definition [anon]
+[2020-12-13 14:53:32:047] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/static/**] to filter [anon] with config [null]
+[2020-12-13 14:53:32:049] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/manager/**] from String definition [authc]
+[2020-12-13 14:53:32:049] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/manager/**] to filter [authc] with config [null]
+[2020-12-13 14:53:32:050] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/login/**] from String definition [anon]
+[2020-12-13 14:53:32:050] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/login/**] to filter [anon] with config [null]
+[2020-12-13 14:53:32:050] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/modify/**] from String definition [authc]
+[2020-12-13 14:53:32:050] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/modify/**] to filter [authc] with config [null]
+[2020-12-13 14:53:32:051] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/validate/**] from String definition [anon]
+[2020-12-13 14:53:32:051] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/validate/**] to filter [anon] with config [null]
+[2020-12-13 14:53:32:051] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/verify/**] from String definition [anon]
+[2020-12-13 14:53:32:051] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/verify/**] to filter [anon] with config [null]
+[2020-12-13 14:57:07:159] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+[2020-12-13 14:57:07:177] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:242) - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@619951b0] has been configured.  Building authorization cache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 14:57:07:177] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:205) - cacheManager property not set.  Constructing CacheManager instance... 
+[2020-12-13 14:57:07:203] [DEBUG] - org.apache.shiro.io.ResourceUtils.loadFromClassPath(ResourceUtils.java:159) - Opening resource from class path [ehcache.xml]
+[2020-12-13 14:57:07:228] [DEBUG] - net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:150) - Configuring ehcache from InputStream
+[2020-12-13 14:57:07:257] [DEBUG] - net.sf.ehcache.config.DiskStoreConfiguration.translatePath(DiskStoreConfiguration.java:141) - Disk Store Path: E:\BigHead\AboutWork\ehcache
+[2020-12-13 14:57:07:300] [DEBUG] - net.sf.ehcache.util.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
+[2020-12-13 14:57:07:340] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:185) - No CacheManagerEventListenerFactory class specified. Skipping...
+[2020-12-13 14:57:07:384] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:57:07:385] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:57:07:390] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:57:07:411] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:57:07:412] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:57:07:413] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:57:07:414] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 14:57:07:415] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 14:57:07:415] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 14:57:07:463] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.MemoryStore for activeSessionCache
+[2020-12-13 14:57:07:485] [WARN] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:162) - diskStorePath 'E:\BigHead\AboutWork\ehcache' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to E:\BigHead\AboutWork\ehcache\ehcache_auto_created3018563410219913538diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+[2020-12-13 14:57:07:486] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:169) - Using diskstore path E:\BigHead\AboutWork\ehcache\ehcache_auto_created3018563410219913538diskstore
+[2020-12-13 14:57:07:486] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:170) - Holding exclusive lock on E:\BigHead\AboutWork\ehcache\ehcache_auto_created3018563410219913538diskstore\.ehcache-diskstore.lock
+[2020-12-13 14:57:07:487] [WARN] - net.sf.ehcache.store.disk.DiskStorageFactory.<init>(DiskStorageFactory.java:132) - Data in persistent disk stores is ignored for stores from automatically created directories.
+Remove diskPersistent or resolve the conflicting disk paths in cache configuration.
+Deleting data file E:\BigHead\AboutWork\ehcache\ehcache_auto_created3018563410219913538diskstore\active%0053ession%0043ache.data
+[2020-12-13 14:57:07:488] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.deleteFile(DiskStorageFactory.java:860) - Failed to delete file active%0053ession%0043ache.data
+[2020-12-13 14:57:07:511] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.<init>(DiskStorageFactory.java:168) - Matching data file missing (or empty) for index file. Deleting index file E:\BigHead\AboutWork\ehcache\ehcache_auto_created3018563410219913538diskstore\active%0053ession%0043ache.index
+[2020-12-13 14:57:07:512] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.deleteFile(DiskStorageFactory.java:860) - Failed to delete file active%0053ession%0043ache.index
+[2020-12-13 14:57:07:538] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: activeSessionCache
+[2020-12-13 14:57:07:539] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'activeSessionCache'.
+[2020-12-13 14:57:07:540] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'activeSessionCache'.
+[2020-12-13 14:57:07:545] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for shiro.authorizationCache
+[2020-12-13 14:57:07:556] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: shiro.authorizationCache
+[2020-12-13 14:57:07:557] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 14:57:07:557] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 14:57:07:559] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:218) - implicit cacheManager created successfully.
+[2020-12-13 14:57:07:560] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:158) - Cache with name 'cn.itrus.framework.shiro.UserReaml.authorizationCache' does not yet exist.  Creating now.
+[2020-12-13 14:57:07:560] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 14:57:07:561] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 14:57:07:562] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'cn.itrus.framework.shiro.UserReaml.authorizationCache'.
+[2020-12-13 14:57:07:562] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:165) - Added EhCache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 14:57:08:729] [INFO] - cn.itrus.framework.filter.ValidataFilter.init(ValidataFilter.java:51) - info ValidataFilter is loaded.
+[2020-12-13 14:57:08:741] [DEBUG] - org.apache.shiro.spring.web.ShiroFilterFactoryBean.createInstance(ShiroFilterFactoryBean.java:424) - Creating Shiro Filter instance.
+[2020-12-13 14:57:08:786] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/static/**] from String definition [anon]
+[2020-12-13 14:57:08:786] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/static/**] to filter [anon] with config [null]
+[2020-12-13 14:57:08:788] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/manager/**] from String definition [authc]
+[2020-12-13 14:57:08:789] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/manager/**] to filter [authc] with config [null]
+[2020-12-13 14:57:08:789] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/login/**] from String definition [anon]
+[2020-12-13 14:57:08:789] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/login/**] to filter [anon] with config [null]
+[2020-12-13 14:57:08:789] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/modify/**] from String definition [authc]
+[2020-12-13 14:57:08:789] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/modify/**] to filter [authc] with config [null]
+[2020-12-13 14:57:08:789] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/validate/**] from String definition [anon]
+[2020-12-13 14:57:08:790] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/validate/**] to filter [anon] with config [null]
+[2020-12-13 14:57:08:790] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/verify/**] from String definition [anon]
+[2020-12-13 14:57:08:790] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/verify/**] to filter [anon] with config [null]
+[2020-12-13 14:59:31:910] [INFO] - cn.itrus.framework.controller.UserController.login(UserController.java:102) - info ø™ ºµ«¬º
+[2020-12-13 14:59:31:912] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:30) - begin query user by username + admin +from db. 
+[2020-12-13 14:59:32:730] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:33) - begin query user by username end.
+[2020-12-13 14:59:32:742] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:572) - Looked up AuthenticationInfo [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=NGE4M2I3YzkwYjU3NzMxYjdlMjM1ZGFkYTY2N2FhODBmZDBhNjdhNWJmMmU4NDA2NzhlNGE4MjQ2YWEyMTU1NA==, salt=3602455880736706]] from doGetAuthenticationInfo
+[2020-12-13 14:59:32:743] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.cacheAuthenticationInfoIfPossible(AuthenticatingRealm.java:510) - AuthenticationInfo caching is disabled for info [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=NGE4M2I3YzkwYjU3NzMxYjdlMjM1ZGFkYTY2N2FhODBmZDBhNjdhNWJmMmU4NDA2NzhlNGE4MjQ2YWEyMTU1NA==, salt=3602455880736706]].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].
+[2020-12-13 14:59:32:743] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:96) - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+[2020-12-13 14:59:32:744] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:102) - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+[2020-12-13 14:59:32:745] [DEBUG] - org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:233) - Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].  Returned account [User [id=9, username=admin, password=4ae76c7b1c578c0d1b58753838f2f2a7cd28596a, token=NGE4M2I3YzkwYjU3NzMxYjdlMjM1ZGFkYTY2N2FhODBmZDBhNjdhNWJmMmU4NDA2NzhlNGE4MjQ2YWEyMTU1NA==, salt=3602455880736706]]
+[2020-12-13 14:59:32:746] [DEBUG] - org.apache.shiro.mgt.DefaultSecurityManager.resolveSession(DefaultSecurityManager.java:441) - Context already contains a session.  Returning.
+[2020-12-13 14:59:32:747] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 06:59:32 GMT]
+[2020-12-13 14:59:32:748] [DEBUG] - org.apache.shiro.mgt.AbstractRememberMeManager.onSuccessfulLogin(AbstractRememberMeManager.java:290) - AuthenticationToken did not indicate RememberMe is requested.  RememberMe functionality will not be executed for corresponding account.
+[2020-12-13 15:15:28:557] [INFO] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:66) - {password=1111111111, newPassword=1111111111, conFirmPassword=1111111111}
+[2020-12-13 15:15:28:558] [ERROR] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:74) - æ…√‹¬Î¥ÌŒÛ°£
+[2020-12-13 15:15:35:312] [INFO] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:66) - {password=admin, newPassword=11111111111, conFirmPassword=1111111111}
+[2020-12-13 15:15:35:312] [ERROR] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:79) -  ‰»Î¡Ω¥Œ–¬√‹¬Î≤ª“ª÷¬°£
+[2020-12-13 15:15:44:757] [INFO] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:66) - {password=admin, newPassword=111111, conFirmPassword=111111}
+[2020-12-13 15:15:45:144] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.modifyPass(UserDaoImpl.java:57) - Modify pass word success. username = admin
+[2020-12-13 15:15:45:144] [ERROR] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:106) - –ﬁ∏ƒ√‹¬Î≥…π¶°£
+[2020-12-13 15:16:03:132] [INFO] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:66) - {password=111111111, newPassword=1111111, conFirmPassword=111111}
+[2020-12-13 15:16:03:134] [ERROR] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:74) - æ…√‹¬Î¥ÌŒÛ°£
+[2020-12-13 15:16:22:687] [INFO] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:66) - {password=111111, newPassword=111111, conFirmPassword=111111}
+[2020-12-13 15:16:22:688] [ERROR] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:84) - –¬√‹¬Î≤ªƒ‹”Î¿œ√‹¬Îœ‡Õ¨°£
+[2020-12-13 15:16:29:442] [INFO] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:66) - {password=111111, newPassword=admin, conFirmPassword=admin}
+[2020-12-13 15:16:29:837] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.modifyPass(UserDaoImpl.java:57) - Modify pass word success. username = admin
+[2020-12-13 15:16:29:838] [ERROR] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:106) - –ﬁ∏ƒ√‹¬Î≥…π¶°£
+[2020-12-13 15:17:03:015] [INFO] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:66) - {password=admin11, newPassword=111111, conFirmPassword=1111}
+[2020-12-13 15:17:03:016] [ERROR] - cn.itrus.framework.service.impl.UserServiceImpl.modifyPass(UserServiceImpl.java:74) - æ…√‹¬Î¥ÌŒÛ°£
+[2020-12-13 15:17:12:540] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 07:17:12 GMT]
+[2020-12-13 15:17:12:540] [DEBUG] - org.apache.shiro.mgt.DefaultSecurityManager.logout(DefaultSecurityManager.java:559) - Logging out subject with primary principal User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=NGE4M2I3YzkwYjU3NzMxYjdlMjM1ZGFkYTY2N2FhODBmZDBhNjdhNWJmMmU4NDA2NzhlNGE4MjQ2YWEyMTU1NA==, salt=1496293272522230]
+[2020-12-13 15:17:18:765] [INFO] - cn.itrus.framework.controller.UserController.login(UserController.java:102) - info ø™ ºµ«¬º
+[2020-12-13 15:17:18:765] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:30) - begin query user by username + admin +from db. 
+[2020-12-13 15:17:19:137] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:33) - begin query user by username end.
+[2020-12-13 15:17:19:138] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:572) - Looked up AuthenticationInfo [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=NmJlYmFhOTVjNTIyMzlhODczNGI4NmY0NzE0Njk3NmFhYjE5NjVkN2NmMmY5MTU0N2YyMDNmOTU3NjUyYWFlOQ==, salt=1496293272522230]] from doGetAuthenticationInfo
+[2020-12-13 15:17:19:138] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.cacheAuthenticationInfoIfPossible(AuthenticatingRealm.java:510) - AuthenticationInfo caching is disabled for info [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=NmJlYmFhOTVjNTIyMzlhODczNGI4NmY0NzE0Njk3NmFhYjE5NjVkN2NmMmY5MTU0N2YyMDNmOTU3NjUyYWFlOQ==, salt=1496293272522230]].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].
+[2020-12-13 15:17:19:138] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:96) - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+[2020-12-13 15:17:19:139] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:102) - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+[2020-12-13 15:17:19:139] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 07:17:19 GMT]
+[2020-12-13 15:18:48:460] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+[2020-12-13 15:18:48:478] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:242) - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@15d21b21] has been configured.  Building authorization cache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 15:18:48:479] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:205) - cacheManager property not set.  Constructing CacheManager instance... 
+[2020-12-13 15:18:48:504] [DEBUG] - org.apache.shiro.io.ResourceUtils.loadFromClassPath(ResourceUtils.java:159) - Opening resource from class path [ehcache.xml]
+[2020-12-13 15:18:48:526] [DEBUG] - net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:150) - Configuring ehcache from InputStream
+[2020-12-13 15:18:48:556] [DEBUG] - net.sf.ehcache.config.DiskStoreConfiguration.translatePath(DiskStoreConfiguration.java:141) - Disk Store Path: E:\BigHead\AboutWork\ehcache
+[2020-12-13 15:18:48:597] [DEBUG] - net.sf.ehcache.util.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
+[2020-12-13 15:18:48:629] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:185) - No CacheManagerEventListenerFactory class specified. Skipping...
+[2020-12-13 15:18:48:659] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:18:48:659] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:18:48:663] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:18:48:679] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:18:48:679] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:18:48:680] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:18:48:680] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:18:48:681] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:18:48:681] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:18:48:715] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for shiro.authorizationCache
+[2020-12-13 15:18:48:732] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: shiro.authorizationCache
+[2020-12-13 15:18:48:732] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 15:18:48:732] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 15:18:48:735] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.MemoryStore for activeSessionCache
+[2020-12-13 15:18:48:747] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:169) - Using diskstore path E:\BigHead\AboutWork\ehcache
+[2020-12-13 15:18:48:748] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:170) - Holding exclusive lock on E:\BigHead\AboutWork\ehcache\.ehcache-diskstore.lock
+[2020-12-13 15:18:48:760] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.<init>(DiskStorageFactory.java:168) - Matching data file missing (or empty) for index file. Deleting index file E:\BigHead\AboutWork\ehcache\active%0053ession%0043ache.index
+[2020-12-13 15:18:48:761] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.deleteFile(DiskStorageFactory.java:860) - Failed to delete file active%0053ession%0043ache.index
+[2020-12-13 15:18:48:770] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: activeSessionCache
+[2020-12-13 15:18:48:770] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'activeSessionCache'.
+[2020-12-13 15:18:48:770] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'activeSessionCache'.
+[2020-12-13 15:18:48:772] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:218) - implicit cacheManager created successfully.
+[2020-12-13 15:18:48:773] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:158) - Cache with name 'cn.itrus.framework.shiro.UserReaml.authorizationCache' does not yet exist.  Creating now.
+[2020-12-13 15:18:48:773] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 15:18:48:774] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 15:18:48:774] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'cn.itrus.framework.shiro.UserReaml.authorizationCache'.
+[2020-12-13 15:18:48:774] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:165) - Added EhCache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 15:18:50:037] [INFO] - cn.itrus.framework.filter.ValidataFilter.init(ValidataFilter.java:51) - info ValidataFilter is loaded.
+[2020-12-13 15:18:50:048] [DEBUG] - org.apache.shiro.spring.web.ShiroFilterFactoryBean.createInstance(ShiroFilterFactoryBean.java:424) - Creating Shiro Filter instance.
+[2020-12-13 15:18:50:078] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/static/**] from String definition [anon]
+[2020-12-13 15:18:50:079] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/static/**] to filter [anon] with config [null]
+[2020-12-13 15:18:50:081] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/manager/**] from String definition [authc]
+[2020-12-13 15:18:50:081] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/manager/**] to filter [authc] with config [null]
+[2020-12-13 15:18:50:082] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/login/**] from String definition [anon]
+[2020-12-13 15:18:50:082] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/login/**] to filter [anon] with config [null]
+[2020-12-13 15:18:50:082] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/modify/**] from String definition [authc]
+[2020-12-13 15:18:50:082] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/modify/**] to filter [authc] with config [null]
+[2020-12-13 15:18:50:082] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/validate/**] from String definition [anon]
+[2020-12-13 15:18:50:083] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/validate/**] to filter [anon] with config [null]
+[2020-12-13 15:18:50:083] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/verify/**] from String definition [anon]
+[2020-12-13 15:18:50:084] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/verify/**] to filter [anon] with config [null]
+[2020-12-13 15:19:01:381] [INFO] - cn.itrus.framework.controller.UserController.login(UserController.java:102) - info ø™ ºµ«¬º
+[2020-12-13 15:19:01:382] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:30) - begin query user by username + admin +from db. 
+[2020-12-13 15:19:02:134] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:33) - begin query user by username end.
+[2020-12-13 15:19:02:144] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:572) - Looked up AuthenticationInfo [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=OGFjOGZiYzNiNzJjYjMwMzcxNmI0NDA5NzAwNGUyMDFmNDFhZjk4MWE5MmUzOGZkZWQ3OTE1ZGZjYzU1NTViZg==, salt=1496293272522230]] from doGetAuthenticationInfo
+[2020-12-13 15:19:02:145] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.cacheAuthenticationInfoIfPossible(AuthenticatingRealm.java:510) - AuthenticationInfo caching is disabled for info [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=OGFjOGZiYzNiNzJjYjMwMzcxNmI0NDA5NzAwNGUyMDFmNDFhZjk4MWE5MmUzOGZkZWQ3OTE1ZGZjYzU1NTViZg==, salt=1496293272522230]].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].
+[2020-12-13 15:19:02:145] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:96) - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+[2020-12-13 15:19:02:146] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:102) - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+[2020-12-13 15:19:02:148] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 07:19:02 GMT]
+[2020-12-13 15:19:11:571] [INFO] - cn.itrus.framework.controller.UserController.login(UserController.java:102) - info ø™ ºµ«¬º
+[2020-12-13 15:19:11:572] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:30) - begin query user by username + admin +from db. 
+[2020-12-13 15:19:11:947] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:33) - begin query user by username end.
+[2020-12-13 15:19:11:948] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:572) - Looked up AuthenticationInfo [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=MDk1NjFiN2NkM2I3MTZlYTM5YWFmODM0ZmZmYTk5ZTJkNGIzNGFmNzQ5MzgwYTAzODI5NGEyMTc4MDIxYWMwNw==, salt=1496293272522230]] from doGetAuthenticationInfo
+[2020-12-13 15:19:11:948] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.cacheAuthenticationInfoIfPossible(AuthenticatingRealm.java:510) - AuthenticationInfo caching is disabled for info [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=MDk1NjFiN2NkM2I3MTZlYTM5YWFmODM0ZmZmYTk5ZTJkNGIzNGFmNzQ5MzgwYTAzODI5NGEyMTc4MDIxYWMwNw==, salt=1496293272522230]].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].
+[2020-12-13 15:19:11:948] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:96) - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+[2020-12-13 15:19:11:949] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:102) - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+[2020-12-13 15:19:11:949] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 07:19:11 GMT]
+[2020-12-13 15:19:17:597] [INFO] - cn.itrus.framework.controller.UserController.login(UserController.java:102) - info ø™ ºµ«¬º
+[2020-12-13 15:19:17:598] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:30) - begin query user by username + admin +from db. 
+[2020-12-13 15:19:17:979] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:33) - begin query user by username end.
+[2020-12-13 15:19:17:981] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:572) - Looked up AuthenticationInfo [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=YTkxMWY4ZTk1NmRhYjZiNjMxOTVmNGU1MjZkNDIzNjk2NjA4OTJiM2IzZTU1NzkzNTQyM2JkNzVhY2U3MGM4MQ==, salt=1496293272522230]] from doGetAuthenticationInfo
+[2020-12-13 15:19:17:981] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.cacheAuthenticationInfoIfPossible(AuthenticatingRealm.java:510) - AuthenticationInfo caching is disabled for info [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=YTkxMWY4ZTk1NmRhYjZiNjMxOTVmNGU1MjZkNDIzNjk2NjA4OTJiM2IzZTU1NzkzNTQyM2JkNzVhY2U3MGM4MQ==, salt=1496293272522230]].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].
+[2020-12-13 15:19:17:982] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:96) - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+[2020-12-13 15:19:17:982] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:102) - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+[2020-12-13 15:19:17:983] [DEBUG] - org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:233) - Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].  Returned account [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=YTkxMWY4ZTk1NmRhYjZiNjMxOTVmNGU1MjZkNDIzNjk2NjA4OTJiM2IzZTU1NzkzNTQyM2JkNzVhY2U3MGM4MQ==, salt=1496293272522230]]
+[2020-12-13 15:19:18:015] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 07:19:18 GMT]
+[2020-12-13 15:19:18:016] [DEBUG] - org.apache.shiro.mgt.AbstractRememberMeManager.onSuccessfulLogin(AbstractRememberMeManager.java:290) - AuthenticationToken did not indicate RememberMe is requested.  RememberMe functionality will not be executed for corresponding account.
+[2020-12-13 15:19:33:417] [INFO] - cn.itrus.sign.manager.controler.ManagerControler.addCompany(ManagerControler.java:45) - AddCompanyCompany [id=null, name=µÁ◊”µµ∞∏, uniqueId=nmg, creditCode=null, employUniqueId=null, license=null, userSealRoleName=22223231, approval=true]
+[2020-12-13 15:19:33:418] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.getConditionStr(ManagerDaoImpl.java:238) - select * from verify_company where name='µÁ◊”µµ∞∏'
+[2020-12-13 15:19:33:776] [INFO] - cn.itrus.sign.manager.service.impl.ManagerServiceImpl.addCompany(ManagerServiceImpl.java:36) - ÃÌº” ß∞‹£¨π´Àæ√˚≥∆“—æ≠¥Ê‘⁄.
+[2020-12-13 15:19:47:023] [INFO] - cn.itrus.sign.manager.controler.ManagerControler.addCompany(ManagerControler.java:45) - AddCompanyCompany [id=null, name=”Õ∆¯ø±ÃΩπ´Àæ£®±æ≤ø£©, uniqueId=11111111111111, creditCode=null, employUniqueId=null, license=null, userSealRoleName=123, approval=false]
+[2020-12-13 15:19:47:024] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.getConditionStr(ManagerDaoImpl.java:238) - select * from verify_company where name='”Õ∆¯ø±ÃΩπ´Àæ£®±æ≤ø£©'
+[2020-12-13 15:19:47:382] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.getConditionStr(ManagerDaoImpl.java:238) - select * from verify_company where uniqueId='11111111111111'
+[2020-12-13 15:19:48:169] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.addCompany(ManagerDaoImpl.java:45) - insertCompany success.
+[2020-12-13 15:20:04:432] [INFO] - cn.itrus.sign.manager.controler.ManagerControler.addCompany(ManagerControler.java:45) - AddCompanyCompany [id=null, name=”Õ∆¯ø±ÃΩπ´Àæ£®±æ≤ø£©11, uniqueId=123123111, creditCode=null, employUniqueId=null, license=null, userSealRoleName=111111111, approval=true]
+[2020-12-13 15:20:04:432] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.getConditionStr(ManagerDaoImpl.java:238) - select * from verify_company where name='”Õ∆¯ø±ÃΩπ´Àæ£®±æ≤ø£©11'
+[2020-12-13 15:20:04:788] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.getConditionStr(ManagerDaoImpl.java:238) - select * from verify_company where uniqueId='123123111'
+[2020-12-13 15:20:05:513] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.addCompany(ManagerDaoImpl.java:45) - insertCompany success.
+[2020-12-13 15:20:17:362] [INFO] - cn.itrus.sign.manager.controler.ManagerControler.editCompany(ManagerControler.java:86) - EditCompanyCompany [id=75, name=”Õ∆¯ø±ÃΩπ´Àæ£®±æ≤ø£©11, uniqueId=123123111, creditCode=null, employUniqueId=null, license=null, userSealRoleName=222222, approval=false]
+[2020-12-13 15:20:17:362] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.getConditionStr(ManagerDaoImpl.java:238) - select * from verify_company where id=75
+[2020-12-13 15:20:17:738] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.getConditionStr(ManagerDaoImpl.java:238) - select * from verify_company where name='”Õ∆¯ø±ÃΩπ´Àæ£®±æ≤ø£©11'
+[2020-12-13 15:20:18:098] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.getConditionStr(ManagerDaoImpl.java:238) - select * from verify_company where uniqueId='123123111'
+[2020-12-13 15:20:18:825] [INFO] - cn.itrus.sign.manager.service.impl.ManagerServiceImpl.editCompany(ManagerServiceImpl.java:90) - –ﬁ∏ƒπ´Àæ≥…π¶°£
+[2020-12-13 15:20:24:412] [INFO] - cn.itrus.sign.manager.controler.ManagerControler.delCompany(ManagerControler.java:58) - DelCompanys[Company [id=75, name=”Õ∆¯ø±ÃΩπ´Àæ£®±æ≤ø£©11, uniqueId=123123111, creditCode=null, employUniqueId=null, license=null, userSealRoleName=222222, approval=false]]
+[2020-12-13 15:20:24:790] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.deleteByColumnValue(ManagerDaoImpl.java:99) - deleteByColumnValue verify_company 123123111 success.
+[2020-12-13 15:21:21:318] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+[2020-12-13 15:21:21:338] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:242) - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@1ae369e8] has been configured.  Building authorization cache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 15:21:21:338] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:205) - cacheManager property not set.  Constructing CacheManager instance... 
+[2020-12-13 15:21:21:367] [DEBUG] - org.apache.shiro.io.ResourceUtils.loadFromClassPath(ResourceUtils.java:159) - Opening resource from class path [ehcache.xml]
+[2020-12-13 15:21:21:402] [DEBUG] - net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:150) - Configuring ehcache from InputStream
+[2020-12-13 15:21:21:435] [DEBUG] - net.sf.ehcache.config.DiskStoreConfiguration.translatePath(DiskStoreConfiguration.java:141) - Disk Store Path: E:\BigHead\AboutWork\ehcache
+[2020-12-13 15:21:21:478] [DEBUG] - net.sf.ehcache.util.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
+[2020-12-13 15:21:21:515] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:185) - No CacheManagerEventListenerFactory class specified. Skipping...
+[2020-12-13 15:21:21:550] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:21:21:551] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:21:21:554] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:21:21:567] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:21:21:568] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:21:21:568] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:21:21:568] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:21:21:569] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:21:21:569] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:21:21:612] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for shiro.authorizationCache
+[2020-12-13 15:21:21:635] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: shiro.authorizationCache
+[2020-12-13 15:21:21:636] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 15:21:21:636] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 15:21:21:638] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.MemoryStore for activeSessionCache
+[2020-12-13 15:21:21:652] [WARN] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:162) - diskStorePath 'E:\BigHead\AboutWork\ehcache' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to E:\BigHead\AboutWork\ehcache\ehcache_auto_created4189528854380451453diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+[2020-12-13 15:21:21:652] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:169) - Using diskstore path E:\BigHead\AboutWork\ehcache\ehcache_auto_created4189528854380451453diskstore
+[2020-12-13 15:21:21:653] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:170) - Holding exclusive lock on E:\BigHead\AboutWork\ehcache\ehcache_auto_created4189528854380451453diskstore\.ehcache-diskstore.lock
+[2020-12-13 15:21:21:653] [WARN] - net.sf.ehcache.store.disk.DiskStorageFactory.<init>(DiskStorageFactory.java:132) - Data in persistent disk stores is ignored for stores from automatically created directories.
+Remove diskPersistent or resolve the conflicting disk paths in cache configuration.
+Deleting data file E:\BigHead\AboutWork\ehcache\ehcache_auto_created4189528854380451453diskstore\active%0053ession%0043ache.data
+[2020-12-13 15:21:21:654] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.deleteFile(DiskStorageFactory.java:860) - Failed to delete file active%0053ession%0043ache.data
+[2020-12-13 15:21:21:666] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.<init>(DiskStorageFactory.java:168) - Matching data file missing (or empty) for index file. Deleting index file E:\BigHead\AboutWork\ehcache\ehcache_auto_created4189528854380451453diskstore\active%0053ession%0043ache.index
+[2020-12-13 15:21:21:666] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.deleteFile(DiskStorageFactory.java:860) - Failed to delete file active%0053ession%0043ache.index
+[2020-12-13 15:21:21:673] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: activeSessionCache
+[2020-12-13 15:21:21:674] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'activeSessionCache'.
+[2020-12-13 15:21:21:674] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'activeSessionCache'.
+[2020-12-13 15:21:21:675] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:218) - implicit cacheManager created successfully.
+[2020-12-13 15:21:21:676] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:158) - Cache with name 'cn.itrus.framework.shiro.UserReaml.authorizationCache' does not yet exist.  Creating now.
+[2020-12-13 15:21:21:677] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 15:21:21:677] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 15:21:21:677] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'cn.itrus.framework.shiro.UserReaml.authorizationCache'.
+[2020-12-13 15:21:21:677] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:165) - Added EhCache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 15:21:22:736] [INFO] - cn.itrus.framework.filter.ValidataFilter.init(ValidataFilter.java:51) - info ValidataFilter is loaded.
+[2020-12-13 15:21:22:749] [DEBUG] - org.apache.shiro.spring.web.ShiroFilterFactoryBean.createInstance(ShiroFilterFactoryBean.java:424) - Creating Shiro Filter instance.
+[2020-12-13 15:21:22:790] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/static/**] from String definition [anon]
+[2020-12-13 15:21:22:791] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/static/**] to filter [anon] with config [null]
+[2020-12-13 15:21:22:793] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/manager/**] from String definition [authc]
+[2020-12-13 15:21:22:793] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/manager/**] to filter [authc] with config [null]
+[2020-12-13 15:21:22:794] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/login/**] from String definition [anon]
+[2020-12-13 15:21:22:794] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/login/**] to filter [anon] with config [null]
+[2020-12-13 15:21:22:794] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/modify/**] from String definition [authc]
+[2020-12-13 15:21:22:794] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/modify/**] to filter [authc] with config [null]
+[2020-12-13 15:21:22:794] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/validate/**] from String definition [anon]
+[2020-12-13 15:21:22:794] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/validate/**] to filter [anon] with config [null]
+[2020-12-13 15:21:22:794] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/verify/**] from String definition [anon]
+[2020-12-13 15:21:22:795] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/verify/**] to filter [anon] with config [null]
+[2020-12-13 15:21:33:601] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.getConditionFuzzyMatchingStr(ManagerDaoImpl.java:278) - select * from verify_company where name like '%µÁ%'
+[2020-12-13 15:21:43:117] [INFO] - cn.itrus.sign.manager.controler.ManagerControler.delCompany(ManagerControler.java:58) - DelCompanys[Company [id=74, name=”Õ∆¯ø±ÃΩπ´Àæ£®±æ≤ø£©, uniqueId=11111111111111, creditCode=null, employUniqueId=null, license=null, userSealRoleName=123, approval=false]]
+[2020-12-13 15:21:43:117] [INFO] - cn.itrus.sign.manager.controler.ManagerControler.delCompany(ManagerControler.java:58) - DelCompanys[Company [id=59, name=312312312321321, uniqueId=3123211312312321, creditCode=null, employUniqueId=null, license=null, userSealRoleName=1231231231232, approval=false]]
+[2020-12-13 15:21:43:503] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.deleteByColumnValue(ManagerDaoImpl.java:99) - deleteByColumnValue verify_company 3123211312312321 success.
+[2020-12-13 15:21:43:506] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.deleteByColumnValue(ManagerDaoImpl.java:99) - deleteByColumnValue verify_company 11111111111111 success.
+[2020-12-13 15:28:39:245] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+[2020-12-13 15:28:39:259] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:242) - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@44088501] has been configured.  Building authorization cache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 15:28:39:260] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:205) - cacheManager property not set.  Constructing CacheManager instance... 
+[2020-12-13 15:28:39:282] [DEBUG] - org.apache.shiro.io.ResourceUtils.loadFromClassPath(ResourceUtils.java:159) - Opening resource from class path [ehcache.xml]
+[2020-12-13 15:28:39:301] [DEBUG] - net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:150) - Configuring ehcache from InputStream
+[2020-12-13 15:28:39:327] [DEBUG] - net.sf.ehcache.config.DiskStoreConfiguration.translatePath(DiskStoreConfiguration.java:141) - Disk Store Path: E:\BigHead\AboutWork\ehcache
+[2020-12-13 15:28:39:361] [DEBUG] - net.sf.ehcache.util.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
+[2020-12-13 15:28:39:389] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:185) - No CacheManagerEventListenerFactory class specified. Skipping...
+[2020-12-13 15:28:39:420] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:28:39:421] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:28:39:425] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:28:39:438] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:28:39:438] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:28:39:439] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:28:39:439] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:28:39:439] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:28:39:439] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:28:39:475] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for shiro.authorizationCache
+[2020-12-13 15:28:39:492] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: shiro.authorizationCache
+[2020-12-13 15:28:39:492] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 15:28:39:492] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 15:28:39:495] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.MemoryStore for activeSessionCache
+[2020-12-13 15:28:39:506] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:169) - Using diskstore path E:\BigHead\AboutWork\ehcache
+[2020-12-13 15:28:39:507] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:170) - Holding exclusive lock on E:\BigHead\AboutWork\ehcache\.ehcache-diskstore.lock
+[2020-12-13 15:28:39:519] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.<init>(DiskStorageFactory.java:168) - Matching data file missing (or empty) for index file. Deleting index file E:\BigHead\AboutWork\ehcache\active%0053ession%0043ache.index
+[2020-12-13 15:28:39:520] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.deleteFile(DiskStorageFactory.java:860) - Failed to delete file active%0053ession%0043ache.index
+[2020-12-13 15:28:39:528] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: activeSessionCache
+[2020-12-13 15:28:39:528] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'activeSessionCache'.
+[2020-12-13 15:28:39:529] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'activeSessionCache'.
+[2020-12-13 15:28:39:530] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:218) - implicit cacheManager created successfully.
+[2020-12-13 15:28:39:531] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:158) - Cache with name 'cn.itrus.framework.shiro.UserReaml.authorizationCache' does not yet exist.  Creating now.
+[2020-12-13 15:28:39:532] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 15:28:39:532] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 15:28:39:533] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'cn.itrus.framework.shiro.UserReaml.authorizationCache'.
+[2020-12-13 15:28:39:533] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:165) - Added EhCache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 15:29:30:994] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+[2020-12-13 15:29:31:009] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:242) - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@44088501] has been configured.  Building authorization cache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 15:29:31:010] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:205) - cacheManager property not set.  Constructing CacheManager instance... 
+[2020-12-13 15:29:31:033] [DEBUG] - org.apache.shiro.io.ResourceUtils.loadFromClassPath(ResourceUtils.java:159) - Opening resource from class path [ehcache.xml]
+[2020-12-13 15:29:31:054] [DEBUG] - net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:150) - Configuring ehcache from InputStream
+[2020-12-13 15:29:31:081] [DEBUG] - net.sf.ehcache.config.DiskStoreConfiguration.translatePath(DiskStoreConfiguration.java:141) - Disk Store Path: E:\BigHead\AboutWork\ehcache
+[2020-12-13 15:29:31:118] [DEBUG] - net.sf.ehcache.util.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
+[2020-12-13 15:29:31:152] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:185) - No CacheManagerEventListenerFactory class specified. Skipping...
+[2020-12-13 15:29:31:186] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:29:31:187] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:29:31:191] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:29:31:205] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:29:31:205] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:29:31:206] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:29:31:206] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:29:31:206] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:29:31:207] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:29:31:245] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for shiro.authorizationCache
+[2020-12-13 15:29:31:262] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: shiro.authorizationCache
+[2020-12-13 15:29:31:263] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 15:29:31:263] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 15:29:31:266] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.MemoryStore for activeSessionCache
+[2020-12-13 15:29:31:278] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:169) - Using diskstore path E:\BigHead\AboutWork\ehcache
+[2020-12-13 15:29:31:279] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:170) - Holding exclusive lock on E:\BigHead\AboutWork\ehcache\.ehcache-diskstore.lock
+[2020-12-13 15:29:31:292] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.<init>(DiskStorageFactory.java:168) - Matching data file missing (or empty) for index file. Deleting index file E:\BigHead\AboutWork\ehcache\active%0053ession%0043ache.index
+[2020-12-13 15:29:31:293] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.deleteFile(DiskStorageFactory.java:860) - Failed to delete file active%0053ession%0043ache.index
+[2020-12-13 15:29:31:300] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: activeSessionCache
+[2020-12-13 15:29:31:301] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'activeSessionCache'.
+[2020-12-13 15:29:31:301] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'activeSessionCache'.
+[2020-12-13 15:29:31:302] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:218) - implicit cacheManager created successfully.
+[2020-12-13 15:29:31:303] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:158) - Cache with name 'cn.itrus.framework.shiro.UserReaml.authorizationCache' does not yet exist.  Creating now.
+[2020-12-13 15:29:31:304] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 15:29:31:304] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 15:29:31:304] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'cn.itrus.framework.shiro.UserReaml.authorizationCache'.
+[2020-12-13 15:29:31:305] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:165) - Added EhCache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 15:29:32:566] [INFO] - cn.itrus.framework.filter.ValidataFilter.init(ValidataFilter.java:51) - info ValidataFilter is loaded.
+[2020-12-13 15:29:32:577] [DEBUG] - org.apache.shiro.spring.web.ShiroFilterFactoryBean.createInstance(ShiroFilterFactoryBean.java:424) - Creating Shiro Filter instance.
+[2020-12-13 15:29:32:608] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/static/**] from String definition [anon]
+[2020-12-13 15:29:32:608] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/static/**] to filter [anon] with config [null]
+[2020-12-13 15:29:32:610] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/manager/**] from String definition [authc]
+[2020-12-13 15:29:32:610] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/manager/**] to filter [authc] with config [null]
+[2020-12-13 15:29:32:610] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/login/**] from String definition [anon]
+[2020-12-13 15:29:32:610] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/login/**] to filter [anon] with config [null]
+[2020-12-13 15:29:32:611] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/modify/**] from String definition [authc]
+[2020-12-13 15:29:32:611] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/modify/**] to filter [authc] with config [null]
+[2020-12-13 15:29:32:611] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/validate/**] from String definition [anon]
+[2020-12-13 15:29:32:611] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/validate/**] to filter [anon] with config [null]
+[2020-12-13 15:29:32:611] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/verify/**] from String definition [anon]
+[2020-12-13 15:29:32:611] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/verify/**] to filter [anon] with config [null]
+[2020-12-13 15:31:14:961] [INFO] - cn.itrus.framework.controller.UserController.login(UserController.java:102) - info ø™ ºµ«¬º
+[2020-12-13 15:31:14:963] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:30) - begin query user by username + admin +from db. 
+[2020-12-13 15:31:15:766] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:33) - begin query user by username end.
+[2020-12-13 15:31:15:778] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:572) - Looked up AuthenticationInfo [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=MDgxYzEzNzg5YTUxZDc3ODM1YWQxMzk1MjA5NDg2ZTU0OTIyMjIxM2NjNWQ0ZmZlNjA4ZmIzN2FjMmExYmUwMA==, salt=1496293272522230]] from doGetAuthenticationInfo
+[2020-12-13 15:31:15:779] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.cacheAuthenticationInfoIfPossible(AuthenticatingRealm.java:510) - AuthenticationInfo caching is disabled for info [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=MDgxYzEzNzg5YTUxZDc3ODM1YWQxMzk1MjA5NDg2ZTU0OTIyMjIxM2NjNWQ0ZmZlNjA4ZmIzN2FjMmExYmUwMA==, salt=1496293272522230]].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].
+[2020-12-13 15:31:15:779] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:96) - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+[2020-12-13 15:31:15:780] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:102) - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+[2020-12-13 15:31:15:781] [DEBUG] - org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:233) - Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].  Returned account [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=MDgxYzEzNzg5YTUxZDc3ODM1YWQxMzk1MjA5NDg2ZTU0OTIyMjIxM2NjNWQ0ZmZlNjA4ZmIzN2FjMmExYmUwMA==, salt=1496293272522230]]
+[2020-12-13 15:31:15:782] [DEBUG] - org.apache.shiro.mgt.DefaultSecurityManager.resolveSession(DefaultSecurityManager.java:441) - Context already contains a session.  Returning.
+[2020-12-13 15:31:15:783] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 07:31:15 GMT]
+[2020-12-13 15:31:15:783] [DEBUG] - org.apache.shiro.mgt.AbstractRememberMeManager.onSuccessfulLogin(AbstractRememberMeManager.java:290) - AuthenticationToken did not indicate RememberMe is requested.  RememberMe functionality will not be executed for corresponding account.
+[2020-12-13 15:47:14:549] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:234) - No authorizationCache instance set.  Checking for a cacheManager...
+[2020-12-13 15:47:14:566] [DEBUG] - org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:242) - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@15d21b21] has been configured.  Building authorization cache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 15:47:14:566] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:205) - cacheManager property not set.  Constructing CacheManager instance... 
+[2020-12-13 15:47:14:594] [DEBUG] - org.apache.shiro.io.ResourceUtils.loadFromClassPath(ResourceUtils.java:159) - Opening resource from class path [ehcache.xml]
+[2020-12-13 15:47:14:618] [DEBUG] - net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:150) - Configuring ehcache from InputStream
+[2020-12-13 15:47:14:649] [DEBUG] - net.sf.ehcache.config.DiskStoreConfiguration.translatePath(DiskStoreConfiguration.java:141) - Disk Store Path: E:\BigHead\AboutWork\ehcache
+[2020-12-13 15:47:14:687] [DEBUG] - net.sf.ehcache.util.PropertyUtil.parseProperties(PropertyUtil.java:88) - propertiesString is null.
+[2020-12-13 15:47:14:721] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheManagerEventListener(ConfigurationHelper.java:185) - No CacheManagerEventListenerFactory class specified. Skipping...
+[2020-12-13 15:47:14:755] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:47:14:756] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:47:14:760] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:47:14:776] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:47:14:777] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:47:14:777] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:47:14:778] [DEBUG] - net.sf.ehcache.Cache.createBootstrapCacheLoader(Cache.java:955) - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2020-12-13 15:47:14:778] [DEBUG] - net.sf.ehcache.Cache.createCacheWriter(Cache.java:929) - CacheWriter factory not configured. Skipping...
+[2020-12-13 15:47:14:778] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheExceptionHandler(ConfigurationHelper.java:96) - No CacheExceptionHandlerFactory class specified. Skipping...
+[2020-12-13 15:47:14:812] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for shiro.authorizationCache
+[2020-12-13 15:47:14:835] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: shiro.authorizationCache
+[2020-12-13 15:47:14:835] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 15:47:14:835] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'shiro.authorizationCache'.
+[2020-12-13 15:47:14:838] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.MemoryStore for activeSessionCache
+[2020-12-13 15:47:14:853] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:169) - Using diskstore path E:\BigHead\AboutWork\ehcache
+[2020-12-13 15:47:14:854] [DEBUG] - net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded(DiskStorePathManager.java:170) - Holding exclusive lock on E:\BigHead\AboutWork\ehcache\.ehcache-diskstore.lock
+[2020-12-13 15:47:14:869] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.<init>(DiskStorageFactory.java:168) - Matching data file missing (or empty) for index file. Deleting index file E:\BigHead\AboutWork\ehcache\active%0053ession%0043ache.index
+[2020-12-13 15:47:14:870] [DEBUG] - net.sf.ehcache.store.disk.DiskStorageFactory.deleteFile(DiskStorageFactory.java:860) - Failed to delete file active%0053ession%0043ache.index
+[2020-12-13 15:47:14:879] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: activeSessionCache
+[2020-12-13 15:47:14:879] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createCacheDecorators(ConfigurationHelper.java:325) - CacheDecoratorFactory not configured. Skipping for 'activeSessionCache'.
+[2020-12-13 15:47:14:880] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'activeSessionCache'.
+[2020-12-13 15:47:14:881] [DEBUG] - org.apache.shiro.cache.ehcache.EhCacheManager.ensureCacheManager(EhCacheManager.java:218) - implicit cacheManager created successfully.
+[2020-12-13 15:47:14:882] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:158) - Cache with name 'cn.itrus.framework.shiro.UserReaml.authorizationCache' does not yet exist.  Creating now.
+[2020-12-13 15:47:14:883] [DEBUG] - net.sf.ehcache.store.MemoryStore.<init>(MemoryStore.java:153) - Initialized net.sf.ehcache.store.NotifyingMemoryStore for cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 15:47:14:884] [DEBUG] - net.sf.ehcache.Cache.initialise(Cache.java:1165) - Initialised cache: cn.itrus.framework.shiro.UserReaml.authorizationCache
+[2020-12-13 15:47:14:884] [DEBUG] - net.sf.ehcache.config.ConfigurationHelper.createDefaultCacheDecorators(ConfigurationHelper.java:354) - CacheDecoratorFactory not configured for defaultCache. Skipping for 'cn.itrus.framework.shiro.UserReaml.authorizationCache'.
+[2020-12-13 15:47:14:884] [INFO] - org.apache.shiro.cache.ehcache.EhCacheManager.getCache(EhCacheManager.java:165) - Added EhCache named [cn.itrus.framework.shiro.UserReaml.authorizationCache]
+[2020-12-13 15:47:16:148] [INFO] - cn.itrus.framework.filter.ValidataFilter.init(ValidataFilter.java:51) - info ValidataFilter is loaded.
+[2020-12-13 15:47:16:169] [DEBUG] - org.apache.shiro.spring.web.ShiroFilterFactoryBean.createInstance(ShiroFilterFactoryBean.java:424) - Creating Shiro Filter instance.
+[2020-12-13 15:47:16:217] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/static/**] from String definition [anon]
+[2020-12-13 15:47:16:217] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/static/**] to filter [anon] with config [null]
+[2020-12-13 15:47:16:220] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/manager/**] from String definition [authc]
+[2020-12-13 15:47:16:221] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/manager/**] to filter [authc] with config [null]
+[2020-12-13 15:47:16:222] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/login/**] from String definition [anon]
+[2020-12-13 15:47:16:222] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/login/**] to filter [anon] with config [null]
+[2020-12-13 15:47:16:223] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/modify/**] from String definition [authc]
+[2020-12-13 15:47:16:224] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/modify/**] to filter [authc] with config [null]
+[2020-12-13 15:47:16:224] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/user/validate/**] from String definition [anon]
+[2020-12-13 15:47:16:225] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/user/validate/**] to filter [anon] with config [null]
+[2020-12-13 15:47:16:226] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.createChain(DefaultFilterChainManager.java:127) - Creating chain [/rest/verify/**] from String definition [anon]
+[2020-12-13 15:47:16:226] [DEBUG] - org.apache.shiro.web.filter.mgt.DefaultFilterChainManager.applyChainConfig(DefaultFilterChainManager.java:278) - Attempting to apply path [/rest/verify/**] to filter [anon] with config [null]
+[2020-12-13 15:47:38:298] [INFO] - cn.itrus.framework.controller.UserController.login(UserController.java:102) - info ø™ ºµ«¬º
+[2020-12-13 15:47:38:300] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:30) - begin query user by username + admin +from db. 
+[2020-12-13 15:47:39:031] [INFO] - cn.itrus.framework.dao.impl.UserDaoImpl.getUserByUserName(UserDaoImpl.java:33) - begin query user by username end.
+[2020-12-13 15:47:39:041] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:572) - Looked up AuthenticationInfo [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=ZDJlMjQyN2U4NDEyMTIxOGRjYzNkZmEwNTg5MDkxYmQ4NmQyMWMyY2Q1NjEyNWRkNmRmM2QwNTU2MWI3YzAzNA==, salt=1496293272522230]] from doGetAuthenticationInfo
+[2020-12-13 15:47:39:041] [DEBUG] - org.apache.shiro.realm.AuthenticatingRealm.cacheAuthenticationInfoIfPossible(AuthenticatingRealm.java:510) - AuthenticationInfo caching is disabled for info [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=ZDJlMjQyN2U4NDEyMTIxOGRjYzNkZmEwNTg5MDkxYmQ4NmQyMWMyY2Q1NjEyNWRkNmRmM2QwNTU2MWI3YzAzNA==, salt=1496293272522230]].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].
+[2020-12-13 15:47:39:041] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:96) - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [java.lang.String]
+[2020-12-13 15:47:39:042] [DEBUG] - org.apache.shiro.authc.credential.SimpleCredentialsMatcher.equals(SimpleCredentialsMatcher.java:102) - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+[2020-12-13 15:47:39:043] [DEBUG] - org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:233) - Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=false].  Returned account [User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=ZDJlMjQyN2U4NDEyMTIxOGRjYzNkZmEwNTg5MDkxYmQ4NmQyMWMyY2Q1NjEyNWRkNmRmM2QwNTU2MWI3YzAzNA==, salt=1496293272522230]]
+[2020-12-13 15:47:39:055] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 07:47:39 GMT]
+[2020-12-13 15:47:39:055] [DEBUG] - org.apache.shiro.mgt.AbstractRememberMeManager.onSuccessfulLogin(AbstractRememberMeManager.java:290) - AuthenticationToken did not indicate RememberMe is requested.  RememberMe functionality will not be executed for corresponding account.
+[2020-12-13 15:47:57:093] [INFO] - cn.itrus.sign.manager.controler.ManagerControler.addCompany(ManagerControler.java:45) - AddCompanyCompany [id=null, name=123123, uniqueId=123123, creditCode=null, employUniqueId=null, license=null, userSealRoleName=123, approval=true]
+[2020-12-13 15:47:57:093] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.getConditionStr(ManagerDaoImpl.java:238) - select * from verify_company where name='123123'
+[2020-12-13 15:47:57:467] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.getConditionStr(ManagerDaoImpl.java:238) - select * from verify_company where uniqueId='123123'
+[2020-12-13 15:47:58:251] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.addCompany(ManagerDaoImpl.java:45) - insertCompany success.
+[2020-12-13 15:48:14:879] [INFO] - cn.itrus.sign.manager.controler.ManagerControler.delCompany(ManagerControler.java:58) - DelCompanys[Company [id=76, name=123123, uniqueId=123123, creditCode=null, employUniqueId=null, license=null, userSealRoleName=123, approval=true]]
+[2020-12-13 15:48:15:231] [INFO] - cn.itrus.sign.manager.dao.impl.ManagerDaoImpl.deleteByColumnValue(ManagerDaoImpl.java:99) - deleteByColumnValue verify_company 123123 success.
+[2020-12-13 15:48:28:526] [DEBUG] - org.apache.shiro.web.servlet.SimpleCookie.addCookieHeader(SimpleCookie.java:226) - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Sat, 12-Dec-2020 07:48:28 GMT]
+[2020-12-13 15:48:28:527] [DEBUG] - org.apache.shiro.mgt.DefaultSecurityManager.logout(DefaultSecurityManager.java:559) - Logging out subject with primary principal User [id=9, username=admin, password=48dbf6e6458513e33ff31cafbb740b868be15d79, token=ZDJlMjQyN2U4NDEyMTIxOGRjYzNkZmEwNTg5MDkxYmQ4NmQyMWMyY2Q1NjEyNWRkNmRmM2QwNTU2MWI3YzAzNA==, salt=1496293272522230]
+[2020-12-13 16:19:05:777] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.util.yaml.ConfigReder.<init>(ConfigReder.java:88) - Itrus sincerity sign: Sdk config load sucessed! in classpath dir.
+[2020-12-13 16:19:05:979] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.service.impl.ItrusSincerityServiceImpl.signFiles(ItrusSincerityServiceImpl.java:104) - Itrus sincerity sign: Begin sign  PDFÂàõÂª∫Ê°£Ê°à2020-12-348 04:19:05
+[2020-12-13 16:19:05:980] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.service.impl.ItrusSincerityServiceImpl.signFiles(ItrusSincerityServiceImpl.java:108) - Itrus sincerity sign:  file size <=  11534336 go to fastSign.
+[2020-12-13 16:19:06:176] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:49) - Itrus sincerity sign: Request url /signingapi/contractSigner/fastSign 
+[2020-12-13 16:19:06:184] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:50) - Itrus sincerity sign: Request body {
+	"contract":{
+		"base64":"...",
+		"code":"a2caa876-b519-4fe6-9b2c-2a2d8fca22ac",
+		"fileInputStream":{
+			"channel":{
+				"open":true
+			},
+			"fD":{}
+		},
+		"fileSize":11213,
+		"name":"PDFÂàõÂª∫Ê°£Ê°à2020-12-348 04:19:05",
+		"signCount":1,
+		"signValidDays":90
+	},
+	"returnType":"base64",
+	"seals":{
+		"Ê°£Ê°àÁ´†":"..."
+	},
+	"signerList":[
+		{
+			"account":"1234567897",
+			"email":"34543534533@qq.com",
+			"idcardNum":"411382124875",
+			"idcardType":"7",
+			"name":"ÊªïÊØÖ",
+			"phone":"18600100051",
+			"signControls":{
+				"keywordLocationSignControls":[
+					{
+						"keyword":"ÂÆ°Ê†∏Ôºö",
+						"offsetX":1.0,
+						"offsetY":1.0,
+						"pageNum":"0",
+						"sealType":1,
+						"sealValue":"Ê°£Ê°àÁ´†",
+						"width":46.9
+					}
+				],
+				"xyLocationSignControls":[
+					{
+						"pageNum":"1",
+						"sealType":1,
+						"sealValue":"Ê°£Ê°àÁ´†",
+						"width":40.0,
+						"x":0.0,
+						"y":0.0
+					}
+				]
+			}
+		}
+	]
+} 
+[2020-12-13 16:19:15:855] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:62) - Itrus sincerity sign: Alread responded.
+[2020-12-13 16:19:15:864] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.reponesInfoHander(ApiRequest.java:83) - Itrus sincerity sign: Respons body {
+	"message":"Successful",
+	"status":200,
+	"data":{
+		"base64":"...",
+		"contractId":258266560626425856
+	},
+	"ok":true
+}
+[2020-12-13 16:19:15:895] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.service.impl.ItrusSincerityServiceImpl.signFiles(ItrusSincerityServiceImpl.java:104) - Itrus sincerity sign: Begin sign  PDFÂàõÂª∫Ê°£Ê°à2020-12-348 04:19:15
+[2020-12-13 16:19:15:895] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.service.impl.ItrusSincerityServiceImpl.signFiles(ItrusSincerityServiceImpl.java:111) - Itrus sincerity sign:  file size >  11534336 go to textSign.
+[2020-12-13 16:19:16:155] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.digest.request.DigestRequestParms.getOriginalTextAndSetSummary(DigestRequestParms.java:222) - Itrus sincerity sign: Get  file original text by inputstrem afa1402a036aea80a8c7cf4c2518f218b89f844fbe55c821fca9e518244b44a7
+[2020-12-13 16:19:16:156] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.digest.request.DigestRequestParms.getOriginalTextAndSetSummary(DigestRequestParms.java:233) - Itrus sincerity sign: Get  file summary by inputstrem 534736dce9ae51a70c7ed25b48ebba8adae3067ba6111b1908389e0d6bbade33
+[2020-12-13 16:19:16:163] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:49) - Itrus sincerity sign: Request url /signingapi/signature/digestSign 
+[2020-12-13 16:19:16:164] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:50) - Itrus sincerity sign: Request body {
+	"signerIdcardType":"7",
+	"content":"534736dce9ae51a70c7ed25b48ebba8adae3067ba6111b1908389e0d6bbade33",
+	"title":"PDFÂàõÂª∫Ê°£Ê°à2020-12-348 04:19:15",
+	"signerIdcardNum":"411382124875",
+	"signerType":2,
+	"signerName":"ÊªïÊØÖ",
+	"originalText":"afa1402a036aea80a8c7cf4c2518f218b89f844fbe55c821fca9e518244b44a7",
+	"isUserWishes":true
+} 
+[2020-12-13 16:19:16:512] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:62) - Itrus sincerity sign: Alread responded.
+[2020-12-13 16:19:16:513] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.reponesInfoHander(ApiRequest.java:83) - Itrus sincerity sign: Respons body {
+	"message":"Successful",
+	"status":200,
+	"data":{
+		"id":258266600883355648,
+		"certNotAfter":"2021-11-28 23:32:27",
+		"certApplyStatus":3,
+		"certSn":"4D69DA65886BBCA6D8779E2726D7EF439C0C9798",
+		"certNotBefore":"2020-11-27 23:32:27",
+		"signValue":"MIIEYAYJKoZIhvcNAQcCoIIEUTCCBE0CAQExDjAMBggqgRzPVQGDEQUAMAsGCSqGSIb3DQEHAaCCAqYwggKiMIICRqADAgECAhRNadpliGu8pth3nicm1+9DnAyXmDAMBggqgRzPVQGDdQUAMIGNMQswCQYDVQQGEwJDTjE5MDcGA1UECgww5YyX5Lqs5aSp5aiB6K+a5L+h55S15a2Q5ZWG5Yqh5pyN5Yqh5pyJ6ZmQ5YWs5Y+4MRgwFgYDVQQLDA9TTTLor4Hkuabns7vnu58xKTAnBgNVBAMMIOWkqeWogeivmuS/oeaVsOWtl+iupOivgeS4reW/g0NBMB4XDTIwMTEyNzE1MzIyN1oXDTIxMTEyODE1MzIyN1owgYYxDzANBgNVBAMMBua7leavhTE5MDcGA1UECgww5YyX5Lqs5aSp5aiB6K+a5L+h55S15a2Q5ZWG5Yqh5pyN5Yqh5pyJ6ZmQ5YWs5Y+4MRUwEwYDVQQLDAzkuqflk4HkuK3lv4MxCjAIBgNVBAsMATcxFTATBgNVBAsMDDQxMTM4MjEyNDg3NTBZMBMGByqGSM49AgEGCCqBHM9VAYItA0IABItbSzSBzVJdD1v18r1ftCjnzjsxGJinMiqWqzDh72ghzL4X1oPPF3umnHx/y87quzIBYgs5dM9Gi++CQfmbQ+WjgYYwgYMwCQYDVR0TBAIwADALBgNVHQ8EBAMCBLAwaQYDVR0fAQH/BF8wXTBboFmgV4ZVaHR0cDovL3RvcGNhLml0cnVzLmNvbS5jbi9wdWJsaWMvaXRydXNjcmw/Q0E9MkEwOTdDMkQzQzZEMEE3NjA1QUZGNTREOTIyRjk4Q0QwNDkwQTMyQjAMBggqgRzPVQGDdQUAA0gAMEUCIC4tKiWWDiAp+XVOyZCkj1LFDCsNGOYDwEcpKMWBvUkLAiEAtSu+Zb8GHpD9h0yoUaKONTR83HWTKMQ6yX7CypYRC/cxggF/MIIBewIBATCBpjCBjTELMAkGA1UEBhMCQ04xOTA3BgNVBAoMMOWMl+S6rOWkqeWogeivmuS/oeeUteWtkOWVhuWKoeacjeWKoeaciemZkOWFrOWPuDEYMBYGA1UECwwPU00y6K+B5Lmm57O757ufMSkwJwYDVQQDDCDlpKnlqIHor5rkv6HmlbDlrZforqTor4HkuK3lv4NDQQIUTWnaZYhrvKbYd54nJtfvQ5wMl5gwDAYIKoEcz1UBgxEFAKBpMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTIxMzA4MTkxNlowLwYJKoZIhvcNAQkEMSIEIFNHNtzprlGnDH7SW0jruora4wZ7phEbGQg4ng1rut4zMAwGCCqBHM9VAYN1BQAERjBEAiBt5iOAZA6JXfXD+oozBn5cUK4dLgo6vsGr0Rr+CZdiWgIgCP7fhLfvvs9NxFWVTjPd+oX7tB/HMhwwPPzSu3stAeY="
+	},
+	"ok":true
+}
+[2020-12-13 16:19:16:514] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.service.impl.ItrusSincerityServiceImpl.haddlerTextSignRespon(ItrusSincerityServiceImpl.java:143) - Itrus sincerity sign: Begin save textSign value
+[2020-12-13 16:19:16:526] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:49) - Itrus sincerity sign: Request url http://172.24.17.48:8001/rest/saveTextSignValues 
+[2020-12-13 16:19:16:526] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:50) - Itrus sincerity sign: Request body {
+	"summary":"534736dce9ae51a70c7ed25b48ebba8adae3067ba6111b1908389e0d6bbade33",
+	"id":258266600883355648,
+	"certNotAfter":"2021-11-28 23:32:27",
+	"signTime":"2020-12-13 16-19-16",
+	"originalText":"afa1402a036aea80a8c7cf4c2518f218b89f844fbe55c821fca9e518244b44a7",
+	"certSn":"4D69DA65886BBCA6D8779E2726D7EF439C0C9798",
+	"certApplyStatus":3,
+	"certNotBefore":"2020-11-27 23:32:27",
+	"signValue":"MIIEYAYJKoZIhvcNAQcCoIIEUTCCBE0CAQExDjAMBggqgRzPVQGDEQUAMAsGCSqGSIb3DQEHAaCCAqYwggKiMIICRqADAgECAhRNadpliGu8pth3nicm1+9DnAyXmDAMBggqgRzPVQGDdQUAMIGNMQswCQYDVQQGEwJDTjE5MDcGA1UECgww5YyX5Lqs5aSp5aiB6K+a5L+h55S15a2Q5ZWG5Yqh5pyN5Yqh5pyJ6ZmQ5YWs5Y+4MRgwFgYDVQQLDA9TTTLor4Hkuabns7vnu58xKTAnBgNVBAMMIOWkqeWogeivmuS/oeaVsOWtl+iupOivgeS4reW/g0NBMB4XDTIwMTEyNzE1MzIyN1oXDTIxMTEyODE1MzIyN1owgYYxDzANBgNVBAMMBua7leavhTE5MDcGA1UECgww5YyX5Lqs5aSp5aiB6K+a5L+h55S15a2Q5ZWG5Yqh5pyN5Yqh5pyJ6ZmQ5YWs5Y+4MRUwEwYDVQQLDAzkuqflk4HkuK3lv4MxCjAIBgNVBAsMATcxFTATBgNVBAsMDDQxMTM4MjEyNDg3NTBZMBMGByqGSM49AgEGCCqBHM9VAYItA0IABItbSzSBzVJdD1v18r1ftCjnzjsxGJinMiqWqzDh72ghzL4X1oPPF3umnHx/y87quzIBYgs5dM9Gi++CQfmbQ+WjgYYwgYMwCQYDVR0TBAIwADALBgNVHQ8EBAMCBLAwaQYDVR0fAQH/BF8wXTBboFmgV4ZVaHR0cDovL3RvcGNhLml0cnVzLmNvbS5jbi9wdWJsaWMvaXRydXNjcmw/Q0E9MkEwOTdDMkQzQzZEMEE3NjA1QUZGNTREOTIyRjk4Q0QwNDkwQTMyQjAMBggqgRzPVQGDdQUAA0gAMEUCIC4tKiWWDiAp+XVOyZCkj1LFDCsNGOYDwEcpKMWBvUkLAiEAtSu+Zb8GHpD9h0yoUaKONTR83HWTKMQ6yX7CypYRC/cxggF/MIIBewIBATCBpjCBjTELMAkGA1UEBhMCQ04xOTA3BgNVBAoMMOWMl+S6rOWkqeWogeivmuS/oeeUteWtkOWVhuWKoeacjeWKoeaciemZkOWFrOWPuDEYMBYGA1UECwwPU00y6K+B5Lmm57O757ufMSkwJwYDVQQDDCDlpKnlqIHor5rkv6HmlbDlrZforqTor4HkuK3lv4NDQQIUTWnaZYhrvKbYd54nJtfvQ5wMl5gwDAYIKoEcz1UBgxEFAKBpMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTIxMzA4MTkxNlowLwYJKoZIhvcNAQkEMSIEIFNHNtzprlGnDH7SW0jruora4wZ7phEbGQg4ng1rut4zMAwGCCqBHM9VAYN1BQAERjBEAiBt5iOAZA6JXfXD+oozBn5cUK4dLgo6vsGr0Rr+CZdiWgIgCP7fhLfvvs9NxFWVTjPd+oX7tB/HMhwwPPzSu3stAeY="
+} 
+[2020-12-13 16:19:16:613] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:62) - Itrus sincerity sign: Alread responded.
+[2020-12-13 16:19:16:613] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.reponesInfoHander(ApiRequest.java:83) - Itrus sincerity sign: Respons body {
+	"message":"Verify text signval faild.",
+	"status":200,
+	"ok":true,
+	"code":"2100002"
+}
+[2020-12-13 16:19:16:614] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.service.impl.ItrusSincerityServiceImpl.haddlerTextSignRespon(ItrusSincerityServiceImpl.java:152) - Itrus sincerity sign: Save textSign value success.
+[2020-12-13 16:20:22:128] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.util.yaml.ConfigReder.<init>(ConfigReder.java:88) - Itrus sincerity sign: Sdk config load sucessed! in classpath dir.
+[2020-12-13 16:20:22:200] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:49) - Itrus sincerity sign: Request url http://172.24.17.48:8001/rest/Approval/isApproval 
+[2020-12-13 16:20:22:237] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:50) - Itrus sincerity sign: Request body {
+	"company_unid":"111222",
+	"role_name":"dasdasdsa"
+} 
+[2020-12-13 16:20:23:696] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:62) - Itrus sincerity sign: Alread responded.
+[2020-12-13 16:20:23:707] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.reponesInfoHander(ApiRequest.java:83) - Itrus sincerity sign: Respons body {
+	"message":"ÂÖ¨Âè∏‰∏çÂ≠òÂú®„ÄÇ",
+	"status":200,
+	"ok":true,
+	"code":"3200008"
+}
+[2020-12-13 16:20:46:416] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.util.yaml.ConfigReder.<init>(ConfigReder.java:88) - Itrus sincerity sign: Sdk config load sucessed! in classpath dir.
+[2020-12-13 16:20:46:481] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:49) - Itrus sincerity sign: Request url http://172.24.17.48:8001/rest/Approval/isApproval 
+[2020-12-13 16:20:46:521] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:50) - Itrus sincerity sign: Request body {
+	"company_unid":"0001H410000000006WER",
+	"role_name":"0001H410000000006WER"
+} 
+[2020-12-13 16:20:48:123] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:62) - Itrus sincerity sign: Alread responded.
+[2020-12-13 16:20:48:136] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.reponesInfoHander(ApiRequest.java:83) - Itrus sincerity sign: Respons body {
+	"message":"Áî®Âç∞‰∫∫ÂëòËßíËâ≤ÁºñÁ†Å‰∏çÊ≠£Á°Æ„ÄÇ",
+	"status":200,
+	"ok":true,
+	"code":"3200014"
+}
+[2020-12-13 16:21:02:617] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.util.yaml.ConfigReder.<init>(ConfigReder.java:88) - Itrus sincerity sign: Sdk config load sucessed! in classpath dir.
+[2020-12-13 16:21:02:689] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:49) - Itrus sincerity sign: Request url http://172.24.17.48:8001/rest/Approval/isApproval 
+[2020-12-13 16:21:02:724] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:50) - Itrus sincerity sign: Request body {
+	"company_unid":"0001H410000000006WER",
+	"role_name":"JT010106DAQZ01"
+} 
+[2020-12-13 16:21:04:218] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:62) - Itrus sincerity sign: Alread responded.
+[2020-12-13 16:21:04:228] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.reponesInfoHander(ApiRequest.java:83) - Itrus sincerity sign: Respons body {
+	"message":"Áî®Âç∞ÊùÉÈôêÊ£ÄÊü•ÊàêÂäü„ÄÇ",
+	"status":200,
+	"data":{
+		"name":"Ê≤πÊ∞îÂãòÊé¢ÂÖ¨Âè∏ÔºàÊú¨ÈÉ®Ôºâ",
+		"sealId":1332360060633993217
+	},
+	"ok":true,
+	"code":"3100003"
+}
+[2020-12-13 16:21:04:244] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.service.impl.ItrusSincerityServiceImpl.signFiles(ItrusSincerityServiceImpl.java:104) - Itrus sincerity sign: Begin sign  PDFÂàõÂª∫Ê°£Ê°à2020-12-348 04:21:04
+[2020-12-13 16:21:04:244] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.service.impl.ItrusSincerityServiceImpl.signFiles(ItrusSincerityServiceImpl.java:108) - Itrus sincerity sign:  file size <=  11534336 go to fastSign.
+[2020-12-13 16:21:04:295] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:49) - Itrus sincerity sign: Request url /signingapi/contractSigner/fastSign 
+[2020-12-13 16:21:04:297] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:50) - Itrus sincerity sign: Request body {
+	"contract":{
+		"base64":"...",
+		"code":"939c1712-2f37-4407-9b49-42ef1caf91bd",
+		"fileInputStream":{
+			"channel":{
+				"open":true
+			},
+			"fD":{}
+		},
+		"fileSize":11213,
+		"name":"PDFÂàõÂª∫Ê°£Ê°à2020-12-348 04:21:04",
+		"signCount":1,
+		"signValidDays":90
+	},
+	"returnType":"base64",
+	"seals":{
+		"Ê°£Ê°àÁ´†":"..."
+	},
+	"signerList":[
+		{
+			"account":"1234567897",
+			"email":"34543534533@qq.com",
+			"idcardNum":"411382124875",
+			"idcardType":"7",
+			"name":"ÊªïÊØÖ",
+			"phone":"18600100051",
+			"signControls":{
+				"keywordLocationSignControls":[
+					{
+						"keyword":"ÂÆ°Ê†∏Ôºö",
+						"offsetX":1.0,
+						"offsetY":1.0,
+						"pageNum":"0",
+						"sealType":1,
+						"sealValue":"Ê°£Ê°àÁ´†",
+						"width":46.9
+					}
+				],
+				"xyLocationSignControls":[
+					{
+						"pageNum":"1",
+						"sealType":2,
+						"sealValue":"1332360060633993217",
+						"width":40.0,
+						"x":0.0,
+						"y":0.0
+					}
+				]
+			}
+		}
+	]
+} 
+[2020-12-13 16:21:05:559] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:62) - Itrus sincerity sign: Alread responded.
+[2020-12-13 16:21:05:566] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.reponesInfoHander(ApiRequest.java:83) - Itrus sincerity sign: Respons body {
+	"message":"Successful",
+	"status":200,
+	"data":{
+		"base64":"...",
+		"contractId":258267054216314881
+	},
+	"ok":true
+}
+[2020-12-13 16:21:17:320] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.util.yaml.ConfigReder.<init>(ConfigReder.java:88) - Itrus sincerity sign: Sdk config load sucessed! in classpath dir.
+[2020-12-13 16:21:17:397] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:49) - Itrus sincerity sign: Request url http://172.24.17.48:8001/rest/Approval/isApproval 
+[2020-12-13 16:21:17:440] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:50) - Itrus sincerity sign: Request body {
+	"company_unid":"0001H410000000006WER",
+	"role_name":"JT010106DAQZ01"
+} 
+[2020-12-13 16:21:18:984] [INFO] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.sendRequest(ApiRequest.java:62) - Itrus sincerity sign: Alread responded.
+[2020-12-13 16:21:18:996] [DEBUG] [1] - cn.itrus.sw.sdk.sincerity.signature.sign.ApiRequest.reponesInfoHander(ApiRequest.java:83) - Itrus sincerity sign: Respons body {
+	"message":"ÂÖ¨Âè∏Êú™ÂºÄÂêØÁî®Âç∞„ÄÇ",
+	"status":200,
+	"ok":true,
+	"code":"3200007"
+}
