@@ -1,5 +1,7 @@
-package com.ty.utils.hash;
+package cn.itrus.sw.sdk.sincerity.signature.util;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -14,10 +16,6 @@ import javax.crypto.spec.PBEKeySpec;
 /**
  * 加密参考https://www.cnblogs.com/interdrp/p/4935819.html
  * @author Administrator
- */
-/**
- * @author Administrator
- *
  */
 public class HashTool {
 	// MD5 并没有避免 Hash 碰撞：这意味不同的密码会导致生成相同的 Hash 值。不过，
@@ -35,8 +33,10 @@ public class HashTool {
 	// 目标是使 Hash 函数足够慢以妨碍攻击，并对用户来说仍然非常快且不会感到有明显的延时,到这个目的通常是使用某些 CPU 密集型算法来实现，比如 PBKDF2, Bcrypt 或 Scrypt 。
 	// 这些算法采用 work factor(也称之为 security factor)或迭代次数作为参数来确定 Hash 函数将变的有多慢，并且随着日后计算能力的提高，可以逐步增大 work factor 来使之与计算能力达到平衡
 	public static final String PBKDF2 = "PBKDF2WithHmacSHA1";
-	// 需要进行转换的资源
+	// 需要进行转换的字符资源
 	private String soures;
+	// 需要进行转换流资源
+	private InputStream souresInputStream;
 	// hash方式 默认md5
 	private String hashType = MD5;
 	// 当前盐值
@@ -56,6 +56,14 @@ public class HashTool {
 	 */
 	public HashTool(String soures,String hashType) {
 		this.soures = soures;
+		this.hashType = hashType;
+	}
+	/**
+	 * @param soures 需要转换的内容
+	 * @param hashType hash方式
+	 */
+	public HashTool(InputStream souresInputStream,String hashType) {
+		this.souresInputStream = souresInputStream;
 		this.hashType = hashType;
 	}
 	
@@ -89,7 +97,15 @@ public class HashTool {
 	public void setSoures(String soures) {
 		this.soures = soures;
 	}
-	
+
+	public InputStream getSouresInputStream() {
+		return souresInputStream;
+	}
+
+	public void setSouresInputStream(InputStream souresInputStream) {
+		this.souresInputStream = souresInputStream;
+	}
+
 	/**
 	 * 更新
 	 * @param soures 加密内容
@@ -113,8 +129,24 @@ public class HashTool {
 			{
 				md.update(salt.getBytes());
 			}
-			// 转换hash byte数组
-			digstBytes = md.digest(soures.getBytes());
+			if (null != soures) {
+				// 转换hash byte数组
+				digstBytes = md.digest(soures.getBytes());
+			} else if (null != souresInputStream) {
+				try {
+					//分多次将一个文件读入，对于大型文件而言，比较推荐这种方式，占用内存比较少。
+		            byte[] buffer = new byte[1024];  
+		            int length = -1;  
+		    		while ((length = souresInputStream.read(buffer, 0, 1024)) != -1) {  
+					    md.update(buffer, 0, length);  
+		    		}
+		    		digstBytes = md.digest();
+		    		souresInputStream.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		
 		} catch (NoSuchAlgorithmException e1) {
 			e1.printStackTrace();
 		}
