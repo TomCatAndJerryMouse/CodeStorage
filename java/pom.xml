@@ -3,7 +3,19 @@
   <groupId>cn.ty.java</groupId>
   <artifactId>code-storage</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
 		<dependency>
 		    <groupId>com.fasterxml.jackson.dataformat</groupId>
 		    <artifactId>jackson-dataformat-yaml</artifactId>
@@ -25,6 +37,12 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.57</version>
-        </dependency>	
-  </dependencies>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 </project>
