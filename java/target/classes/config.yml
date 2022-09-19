@@ -1,6 +1,0 @@
-apigate:
-  url: http://demo-open.itruscloud.com/apigate
-appinfo:
-  appid: 3eba07dc3c0a4d
-  servicecode: signPrivate002
-  appsecrt: 2489df31716b42c386443ced68cc57f9

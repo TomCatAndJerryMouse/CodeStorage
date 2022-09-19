@@ -1,18 +1,26 @@
 package cn.ty.util.certificate;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.security.InvalidKeyException;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
 import java.security.PrivateKey;
+import java.security.Security;
 import java.security.Signature;
 import java.security.UnrecoverableKeyException;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
 import java.util.Base64;
+
+import org.junit.Test;
 
 import com.sun.xml.internal.ws.util.StringUtils;
 
@@ -25,6 +33,10 @@ public class Index {
 	private static String certAlias  = "mytest";
 	// 密钥库类型
 	private static String keyType = "JKS";
+	// 密钥库类型
+	private static String signCer = "sign.cer";
+	// 密钥库类型
+	private static String jiami = "jiami.cer";
 	
 	public static void main(String[] args) throws KeyStoreException, NoSuchAlgorithmException, CertificateException, IOException, UnrecoverableKeyException, InvalidKeyException {
 		// 
@@ -34,7 +46,6 @@ public class Index {
 		ks.load(fi,storepass.toCharArray());
 		// 获取证书
 		Certificate cf = ks.getCertificate(certAlias);
-		
 		System.out.println(Base64.getEncoder().encodeToString(cf.getEncoded()));
 //		ks.getCertificate(alias);
 		
@@ -46,4 +57,25 @@ public class Index {
 		Signature sig = Signature.getInstance("SHA1withDSA");
 		sig.initSign(priKey);
 	}
+	
+	@Test
+	public void sign() throws CertificateException, FileNotFoundException, NoSuchProviderException {
+		String string = (this.getClass().getResource("/")+signCer).replace("file:/", "");
+		String jiamiPath = (this.getClass().getResource("/")+jiami).replace("file:/", "");
+		System.out.println(string);
+		File signCer = new File(string);
+		File jiamiCer = new File(jiamiPath);
+		InputStream inStream = new FileInputStream(signCer);
+		InputStream jiamiCerStream = new FileInputStream(jiamiCer);
+		Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+		CertificateFactory cf = CertificateFactory.getInstance("X509","BC");
+//		X509Certificate x = (X509Certificate) cf.generateCertificate(inStream);
+		Certificate jiamix = cf.generateCertificate(jiamiCerStream);
+		Certificate  c = cf.generateCertificate(inStream);
+//		System.out.println(x.getSerialNumber());
+		System.out.println(jiamix.toString());
+		System.out.println(c.toString());
+		
+	}
+	
 }
