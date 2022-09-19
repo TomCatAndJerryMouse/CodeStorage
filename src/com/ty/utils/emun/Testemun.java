@@ -1,13 +1,13 @@
 package com.ty.utils.emun;
 /**
- * Ã¶¾Ù²âÊÔÀà
- * ¹¹Ôìº¯ÊıÓÚÃ¶¾ÙÖĞµÄ×Ö¶Î²ÎÊıÁĞ±íË³Ğò±£³ÖÒ»ÖÂ
+ * æšä¸¾æµ‹è¯•ç±»
+ * æ„é€ å‡½æ•°äºæšä¸¾ä¸­çš„å­—æ®µå‚æ•°åˆ—è¡¨é¡ºåºä¿æŒä¸€è‡´
  * @author Administrator
  *
  */
 public enum Testemun {
-    RED("ºìÉ«",1),GREEN("ÂÌÉ«",2),YELLOW("»ÆÉ«",3);
-    // ³ÉÔ±±äÁ¿
+    RED("çº¢è‰²",1),GREEN("ç»¿è‰²",2),YELLOW("é»„è‰²",3);
+    // æˆå‘˜å˜é‡
 	private int index;
     private String name;
     
