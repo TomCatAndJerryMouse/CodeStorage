@@ -3,38 +3,38 @@ package cn.ty.util.path;
 import java.io.File;
 
 /**
- * 在windows和linux系统下均可正常使用
+ * 锟斤拷windows锟斤拷linux系统锟铰撅拷锟斤拷锟斤拷锟斤拷使锟斤拷
  * Create by yster@foxmail.com 2018/6/6/006 14:51
  */
 public class PathUtil {
-    //获取项目的根路径
+    //锟斤拷取锟斤拷目锟侥革拷路锟斤拷
     public final static String classPath;
  
     static {
-        //获取的是classpath路径，适用于读取resources下资源
+        //锟斤拷取锟斤拷锟斤拷classpath路锟斤拷锟斤拷锟斤拷锟斤拷锟节讹拷取resources锟斤拷锟斤拷源
         classPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
     }
  
     /**
-     * 项目根目录
+     * 锟斤拷目锟斤拷目录
      */
     public static String getRootPath() {
         return RootPath("");
     }
  
     /**
-     * 自定义追加路径
+     * 锟皆讹拷锟斤拷追锟斤拷路锟斤拷
      */
     public static String getRootPath(String u_path) {
-        return RootPath("/" + u_path);
+        return RootPath("" + u_path);
     }
  
     /**
-     * 私有处理方法
+     * 私锟叫达拷锟斤拷锟斤拷
      */
     private static String RootPath(String u_path) {
         String rootPath = "";
-        //windows下
+        //windows锟斤拷
         if ("\\".equals(File.separator)) {
             //System.out.println(classPath);
             rootPath = classPath + u_path;
@@ -43,7 +43,7 @@ public class PathUtil {
                 rootPath = rootPath.substring(1);
             }
         }
-        //linux下
+        //linux锟斤拷
         if ("/".equals(File.separator)) {
             //System.out.println(classPath);
             rootPath = classPath + u_path;
@@ -52,5 +52,5 @@ public class PathUtil {
         return rootPath;
     }
  
-    //更多扩展方法任你发挥
+    //锟斤拷锟斤拷锟斤拷展锟斤拷锟斤拷锟斤拷锟姐发锟斤拷
 }
