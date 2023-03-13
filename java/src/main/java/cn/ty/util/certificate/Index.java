@@ -54,7 +54,7 @@ public class Index {
 		ks.load(fi,storepass.toCharArray());
 		// 获取证书
 		Certificate cf = ks.getCertificate(certAlias);
-
+//		cf.getPublicKey()
 		System.out.println(Base64.getEncoder().encodeToString(cf.getEncoded()));
 //		ks.getCertificate(alias);
 		
@@ -67,31 +67,37 @@ public class Index {
 		sig.initSign(priKey);
 		sig.update("123123".getBytes());
 		String ss = Base64.getEncoder().encodeToString(sig.sign());
-		System.out.println("签名值："+ss);
+		System.out.println("签名值===============："+ss);
 
 
 		sig.initVerify(cf.getPublicKey());
 		sig.update("123123".getBytes());
-		System.out.println("验证签名结果："+sig.verify(Base64.getDecoder().decode(ss)));
+		System.out.println("验证签名结果===========================："+sig.verify(Base64.getDecoder().decode(ss)));
+		System.out.println("签名值===============："+ss);
 	}
 	
 	@Test
 	public void sign() throws CertificateException, FileNotFoundException, NoSuchProviderException {
 		String string = (this.getClass().getResource("/")+signCer).replace("file:/", "");
 		String jiamiPath = (this.getClass().getResource("/")+jiami).replace("file:/", "");
+		String xx12312 = (this.getClass().getResource("/")+"12312.cer").replace("file:/", "");
 		System.out.println(string);
 		File signCer = new File(string);
 		File jiamiCer = new File(jiamiPath);
+		File xx12312Cer = new File(xx12312);
 		InputStream inStream = new FileInputStream(signCer);
 		InputStream jiamiCerStream = new FileInputStream(jiamiCer);
+		InputStream xx12312CerCerStream = new FileInputStream(xx12312Cer);
 		Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
 		CertificateFactory cf = CertificateFactory.getInstance("X509","BC");
 //		X509Certificate x = (X509Certificate) cf.generateCertificate(inStream);
 		Certificate jiamix = cf.generateCertificate(jiamiCerStream);
 		Certificate  c = cf.generateCertificate(inStream);
+		Certificate  c1 = cf.generateCertificate(xx12312CerCerStream);
 //		System.out.println(x.getSerialNumber());
 		System.out.println(jiamix.toString());
 		System.out.println(c.toString());
+		System.out.println(c1.toString());
 		
 	}
 	
