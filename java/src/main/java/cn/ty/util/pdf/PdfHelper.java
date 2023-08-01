@@ -1,9 +1,11 @@
 package cn.ty.util.pdf;
 
+import com.itextpdf.text.List;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.parser.PdfReaderContentParser;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * @ClassName PdfHelper
@@ -22,15 +24,14 @@ public class PdfHelper {
      * @param keyWords
      * @return float[]
      */
-    public static float[] getKeyWordsByPath(String filepath, String keyWords) {
-        float[] coordinate = null;
+    public static ArrayList<float[]> getKeyWordsByPath(String filepath, String keyWords) {
         try{
             PdfReader pdfReader = new PdfReader(filepath);
-            coordinate = getKeyWords(pdfReader, keyWords);
+            return getKeyWords(pdfReader, keyWords);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return coordinate;
+        return null;
     }
 
     /**
@@ -41,24 +42,28 @@ public class PdfHelper {
      * @param keyWords
      * @return float[]
      */
-    private static float[] getKeyWords(PdfReader pdfReader, String keyWords) {
-        float[] coordinate = null;
+    private static ArrayList<float[]> getKeyWords(PdfReader pdfReader, String keyWords) {
+        
         int page = 0;
+        ArrayList<float[]> list = new ArrayList<float[]>();
         try{
             int pageNum = pdfReader.getNumberOfPages();
             PdfReaderContentParser pdfReaderContentParser = new PdfReaderContentParser(pdfReader);
             CustomRenderListener renderListener = new CustomRenderListener();
             renderListener.setKeyWord(keyWords);
-            for (page = 1; page <= pageNum; page++) {
-                renderListener.setPage(page);
-                pdfReaderContentParser.processContent(page, renderListener);
+//            for (page = 1; page <= pageNum; page++) {
+                renderListener.setPage(pageNum);
+                pdfReaderContentParser.processContent(1, renderListener);
+                float[] coordinate = null;
                 coordinate = renderListener.getPcoordinate();
-                if (coordinate != null) break;
-            }
+                if (coordinate != null){
+                	list.add(coordinate);
+                }
+//            }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return coordinate;
+        return list;
     }
 
 }
