@@ -1,8 +1,4 @@
-package main.java.cn.ty.util.pdf;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+package cn.ty.util.pdf;
 
 import com.itextpdf.awt.geom.Rectangle2D;
 import com.itextpdf.text.Rectangle;
@@ -11,6 +7,10 @@ import com.itextpdf.text.pdf.parser.ImageRenderInfo;
 import com.itextpdf.text.pdf.parser.PdfReaderContentParser;
 import com.itextpdf.text.pdf.parser.RenderListener;
 import com.itextpdf.text.pdf.parser.TextRenderInfo;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PDFUtil {
 	public static List<KeyWordInfo> getKeyWordLocation(final String keyWords, PdfReader reader) throws IOException {

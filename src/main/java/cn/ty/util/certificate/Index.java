@@ -1,4 +1,4 @@
-package main.java.cn.ty.util.certificate;
+package cn.ty.util.certificate;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -42,6 +42,7 @@ public class Index {
 	
 
 	public static void main(String[] args) throws KeyStoreException, NoSuchAlgorithmException, CertificateException, IOException, UnrecoverableKeyException, InvalidKeyException, SignatureException {
+		System.out.println(Index.class.getClassLoader().getResource(""));
 		storePath = URLDecoder.decode(Index.class.getClassLoader().getResource("mytest.keystore").getPath().toString(),"UTF-8");
 		if (System.getProperty("os.name").toLowerCase().contains("windows")) {
 			storePath = storePath.substring(1);
@@ -99,6 +100,28 @@ public class Index {
 		System.out.println(c.toString());
 		System.out.println(c1.toString());
 		
+	}
+
+	/**
+	 * 使用cer验签
+	 */
+	@Test
+	public void verfiy()throws CertificateException, FileNotFoundException, NoSuchProviderException, KeyStoreException, NoSuchAlgorithmException, CertificateException, IOException, UnrecoverableKeyException, InvalidKeyException, SignatureException {
+//		System.out.println(Base64.getDecoder().decode("ae3TVoXrV9sxwYj6EiFjUvtpEUqAlwEI1tGVrSeyWpcM8A2pHqb0J+JDvK+9OiAkVSRnbtn5otVZuqTX72vmu0gDKFBcjKGAuHKEBxaJD09ggwqKBiGPJwkt5tNP7EBu7zOwTnZq1SOE0aIv9m1+1Q3a5XsKabF0OIDRHVhKMAz1id6tYnLv2QnpCi66d+QuQRbwzMY5YKP1sIAu4aEaYdVVW8/wuCdVJpg4blYzwrxN522dWExa6s5eAmhJE2ukckXMvgz6K9TyPovCRx80hhAJTNw/fn6tuGtuLO1VejUEIrETL0QcAc6hIVNGN33+kZVONB/mqh5h6S9+WsOyPg=="));
+		String xx12312 = (this.getClass().getResource("/")+"wangweilie.cer").replace("file:/", "");
+		System.out.println(xx12312);
+		File xx12312Cer = new File(xx12312);
+		InputStream xx12312CerCerStream = new FileInputStream(xx12312Cer);
+		Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+		CertificateFactory cf = CertificateFactory.getInstance("X509","BC");
+		Certificate  c1 = cf.generateCertificate(xx12312CerCerStream);
+		// 打印证书信息
+		//System.out.println(c1.toString());
+		// 用私钥签名
+		Signature sig = Signature.getInstance("SHA256withRSA");
+		sig.initVerify(c1.getPublicKey());
+		sig.update("代付类型:721C516A-2829-4476-9A8C-42DB066B63A1^货币编号:RMB^应付金额:9600.00^付款账户内码:0000000360^结算方式:1111^出纳:王列线^摘要:党风廉政先进集体^对方账号:6228482928708101571^对方户名:段伟峰^付款金额:84dkxynz0IZ1vQ7tBUEp2BnHyFRY/XoQCR9O1L8XKmE=^对方账号:6228482928367875671^对方户名:王鹏华^付款金额:84dkxynz0IZ1vQ7tBUEp2BnHyFRY/XoQCR9O1L8XKmE=^对方账号:6228482921042485511^对方户名:刘玉龙^付款金额:pkfZ83avaVXhDaG8HS+Qu2fN07+fuOnPdUz6of8ckvI=^对方账号:6228482920952282918^对方户名:肖年成^付款金额:pkfZ83avaVXhDaG8HS+Qu2fN07+fuOnPdUz6of8ckvI=^对方账号:6228482921042470315^对方户名:陶振义^付款金额:pkfZ83avaVXhDaG8HS+Qu2fN07+fuOnPdUz6of8ckvI=^对方账号:6228482928327669677^对方户名:王飞^付款金额:84dkxynz0IZ1vQ7tBUEp2BnHyFRY/XoQCR9O1L8XKmE=^对方账号:6228482928718174071^对方户名:倪凯峰^付款金额:84dkxynz0IZ1vQ7tBUEp2BnHyFRY/XoQCR9O1L8XKmE=^对方账号:6228482928685135477^对方户名:赵磊^付款金额:pkfZ83avaVXhDaG8HS+Qu2fN07+fuOnPdUz6of8ckvI=^对方账号:6228482928694550476^对方户名:白杨明^付款金额:pkfZ83avaVXhDaG8HS+Qu2fN07+fuOnPdUz6of8ckvI=^对方账号:6228482920646192010^对方户名:贺刘军^付款金额:pkfZ83avaVXhDaG8HS+Qu2fN07+fuOnPdUz6of8ckvI=".getBytes());
+		System.out.println("验证签名结果===========================："+sig.verify(Base64.getDecoder().decode("ae3TVoXrV9sxwYj6EiFjUvtpEUqAlwEI1tGVrSeyWpcM8A2pHqb0J+JDvK+9OiAkVSRnbtn5otVZuqTX72vmu0gDKFBcjKGAuHKEBxaJD09ggwqKBiGPJwkt5tNP7EBu7zOwTnZq1SOE0aIv9m1+1Q3a5XsKabF0OIDRHVhKMAz1id6tYnLv2QnpCi66d+QuQRbwzMY5YKP1sIAu4aEaYdVVW8/wuCdVJpg4blYzwrxN522dWExa6s5eAmhJE2ukckXMvgz6K9TyPovCRx80hhAJTNw/fn6tuGtuLO1VejUEIrETL0QcAc6hIVNGN33+kZVONB/mqh5h6S9+WsOyPg==")));
 	}
 	
 }

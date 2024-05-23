@@ -1,4 +1,4 @@
-package main.java.cn.ty.util.pdf;
+package cn.ty.util.pdf;
 
 import com.itextpdf.awt.geom.Rectangle2D.Float;
 import com.itextpdf.text.pdf.parser.ImageRenderInfo;
@@ -29,7 +29,9 @@ public class CustomRenderListener implements RenderListener{
     public float[] getPcoordinate(){
         return pcoordinate;
     }
-
+    public void setPcoordinate(float[] pcoordinate){
+         this.pcoordinate=pcoordinate;
+    }
     public String getKeyWord() {
         return keyWord;
     }

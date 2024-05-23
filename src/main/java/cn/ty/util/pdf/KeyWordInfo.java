@@ -1,4 +1,4 @@
-package main.java.cn.ty.util.pdf;
+package cn.ty.util.pdf;
 
 public class KeyWordInfo {
     private float x;//在pdf的x坐标
